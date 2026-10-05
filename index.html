@@ -632,31 +632,39 @@
   <!-- ========================================================================
        STAIR MENU DRAWER (Staggered Cascading Navigation Panel)
        ======================================================================== -->
-  <div class="stair-drawer-overlay" id="stairDrawerOverlay">
-    <div class="stair-drawer-panel" id="stairDrawerPanel">
+  <div class="stair-drawer-overlay" id="stairDrawerOverlay" aria-hidden="true">
+    <aside class="stair-drawer-panel" id="stairDrawerPanel" aria-label="Navigation Dashboard">
       <div class="stair-drawer-scroll-wrap">
+        <!-- Drawer Header -->
         <div class="stair-drawer-header">
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="assets/images/app_icon.webp" alt="VIDZA Icon"
-              style="width: 38px; height: 38px; border-radius: 10px;" width="38" height="38" loading="lazy" decoding="async">
-            <div>
-              <div
-                style="font-weight: 800; font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: var(--text-white); letter-spacing: -0.01em;">
-                VIDZA Player</div>
-              <div style="font-size: 0.74rem; color: var(--purple-light); font-weight: 600;">Official Android & TV</div>
+          <div class="drawer-brand-block">
+            <img src="assets/images/app_icon.webp" alt="VIDZA Logo" class="drawer-app-icon" width="40" height="40" loading="eager" decoding="async">
+            <div class="drawer-title-box">
+              <span class="drawer-brand-name">VIDZA Player</span>
+              <span class="drawer-brand-tag">v2.4 • Android &amp; TV</span>
             </div>
           </div>
-          <button class="modal-close-btn" id="stairDrawerClose" aria-label="Close menu" style="position: static;">
+          <button class="modal-close-btn drawer-close-btn" id="stairDrawerClose" aria-label="Close menu">
             <span class="material-symbols-rounded">close</span>
           </button>
         </div>
+
+        <!-- Quick Platform Badges -->
+        <div class="drawer-quick-pills">
+          <span class="drawer-pill"><span class="material-symbols-rounded">hdr_on</span> 4K HDR</span>
+          <span class="drawer-pill"><span class="material-symbols-rounded">graphic_eq</span> 5-Band EQ</span>
+          <span class="drawer-pill"><span class="material-symbols-rounded">security</span> 100% Private</span>
+        </div>
+
+        <!-- Section Label -->
+        <div class="drawer-section-label">NAVIGATION</div>
 
         <!-- Cascading Stair Navigation Items -->
         <ul class="stair-nav-list">
           <li class="stair-item">
             <a href="#hero" class="stair-link stair-nav-anchor">
               <div class="stair-link-left">
-                <div class="stair-link-icon">
+                <div class="stair-link-icon purple">
                   <span class="material-symbols-rounded">home</span>
                 </div>
                 <div>
@@ -671,8 +679,8 @@
           <li class="stair-item">
             <a href="#features" class="stair-link stair-nav-anchor">
               <div class="stair-link-left">
-                <div class="stair-link-icon">
-                  <span class="material-symbols-rounded">bolt</span>
+                <div class="stair-link-icon red">
+                  <span class="material-symbols-rounded">tune</span>
                 </div>
                 <div>
                   <div class="stair-link-title">Engine Features</div>
@@ -686,12 +694,12 @@
           <li class="stair-item">
             <a href="#showcase" class="stair-link stair-nav-anchor">
               <div class="stair-link-left">
-                <div class="stair-link-icon">
+                <div class="stair-link-icon purple">
                   <span class="material-symbols-rounded">screenshot_monitor</span>
                 </div>
                 <div>
                   <div class="stair-link-title">Visual Showcase</div>
-                  <div class="stair-link-desc">Phone & Android TV screenshots</div>
+                  <div class="stair-link-desc">Phone &amp; Android TV screenshots</div>
                 </div>
               </div>
               <span class="stair-step-tag">03</span>
@@ -701,12 +709,12 @@
           <li class="stair-item">
             <a href="#devices" class="stair-link stair-nav-anchor">
               <div class="stair-link-left">
-                <div class="stair-link-icon">
+                <div class="stair-link-icon red">
                   <span class="material-symbols-rounded">devices</span>
                 </div>
                 <div>
-                  <div class="stair-link-title">TV & Phone Ecosystem</div>
-                  <div class="stair-link-desc">Available now & roadmap</div>
+                  <div class="stair-link-title">Multi-Device Ecosystem</div>
+                  <div class="stair-link-desc">Touch handheld &amp; 10-foot TV UI</div>
                 </div>
               </div>
               <span class="stair-step-tag">04</span>
@@ -714,14 +722,14 @@
           </li>
 
           <li class="stair-item">
-            <a href="about.html" target="_blank" rel="noopener noreferrer" class="stair-link">
+            <a href="about.html" class="stair-link">
               <div class="stair-link-left">
-                <div class="stair-link-icon" style="color: var(--purple-light);">
+                <div class="stair-link-icon purple">
                   <span class="material-symbols-rounded">info</span>
                 </div>
                 <div>
                   <div class="stair-link-title">About Us</div>
-                  <div class="stair-link-desc">SkeltoLabs engineering & vision</div>
+                  <div class="stair-link-desc">SkeltoLabs engineering &amp; vision</div>
                 </div>
               </div>
               <span class="stair-step-tag">05</span>
@@ -729,14 +737,14 @@
           </li>
 
           <li class="stair-item">
-            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="stair-link">
+            <a href="contact.html" class="stair-link">
               <div class="stair-link-left">
-                <div class="stair-link-icon" style="color: var(--red-primary);">
+                <div class="stair-link-icon red">
                   <span class="material-symbols-rounded">support_agent</span>
                 </div>
                 <div>
-                  <div class="stair-link-title">Contact</div>
-                  <div class="stair-link-desc">Developer support & inquiries</div>
+                  <div class="stair-link-title">Contact Support</div>
+                  <div class="stair-link-desc">Developer help &amp; technical inquiries</div>
                 </div>
               </div>
               <span class="stair-step-tag">06</span>
@@ -746,61 +754,59 @@
           <li class="stair-item">
             <a href="#faq" class="stair-link stair-nav-anchor">
               <div class="stair-link-left">
-                <div class="stair-link-icon">
+                <div class="stair-link-icon purple">
                   <span class="material-symbols-rounded">help</span>
                 </div>
                 <div>
-                  <div class="stair-link-title">FAQ & Help</div>
-                  <div class="stair-link-desc">Installation & common questions</div>
+                  <div class="stair-link-title">FAQ &amp; Help</div>
+                  <div class="stair-link-desc">Installation &amp; common questions</div>
                 </div>
               </div>
               <span class="stair-step-tag">07</span>
             </a>
           </li>
-
-          <li class="stair-item">
-            <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="stair-link"
-              style="width: 100%; border-color: rgba(0, 210, 255, 0.35); background: rgba(0, 210, 255, 0.06); text-align: left; cursor: pointer; border-radius: var(--radius-md);">
-              <div class="stair-link-left">
-                <div class="stair-link-icon" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); display: flex; align-items: center; justify-content: center;">
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
-                    <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
-                    <path d="M17.4 9.6L14.4 12.6L3.6 1.8C4.1 1.3 4.8 1.1 5.6 1.5L17.4 8.2C18.2 8.7 18.2 9.2 17.4 9.6Z" fill="#00F076"/>
-                    <path d="M17.4 15.6L5.6 22.3C4.8 22.7 4.1 22.5 3.6 22L14.4 11.2L17.4 14.2C18.2 14.6 18.2 15.2 17.4 15.6Z" fill="#FF3333"/>
-                    <path d="M21.6 12L17.4 9.6L14.4 12.6L17.4 15.6L21.6 13.2C22.4 12.7 22.4 12.3 21.6 12Z" fill="#FFBA00"/>
-                  </svg>
-                </div>
-                <div>
-                  <div class="stair-link-title" style="color: var(--text-white);">Install Now</div>
-                  <div class="stair-link-desc">Official Google Play Store</div>
-                </div>
-              </div>
-              <span class="stair-step-tag">08</span>
-            </a>
-          </li>
         </ul>
+
+        <!-- Quick Legal & Resource Links -->
+        <div class="drawer-resource-row">
+          <a href="privacy-policy.html" class="drawer-sublink">Privacy</a>
+          <span class="drawer-sep">•</span>
+          <a href="terms-of-service.html" class="drawer-sublink">Terms</a>
+          <span class="drawer-sep">•</span>
+          <a href="usage-disclaimer.html" class="drawer-sublink">Disclaimer</a>
+          <span class="drawer-sep">•</span>
+          <a href="open-source-licenses.html" class="drawer-sublink">Licenses</a>
+        </div>
       </div>
 
+      <!-- Drawer Footer -->
       <div class="stair-drawer-footer">
-        <div
-          style="display: flex; align-items: center; justify-content: space-between; font-size: 0.84rem; color: var(--text-secondary);">
-          <span>Color Scheme</span>
-          <button class="theme-toggle-btn" id="drawerThemeToggleBtn" style="width: 36px; height: 36px;"
-            aria-label="Toggle theme">
-            <span class="material-symbols-rounded" style="font-size: 20px;">dark_mode</span>
+        <div class="drawer-theme-row">
+          <div class="drawer-theme-label">
+            <span class="material-symbols-rounded" style="font-size: 18px;">palette</span>
+            <span>Appearance</span>
+          </div>
+          <button class="theme-toggle-btn drawer-theme-btn" id="drawerThemeToggleBtn" aria-label="Toggle theme">
+            <span class="material-symbols-rounded" style="font-size: 19px;">dark_mode</span>
           </button>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 9px;">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" style="flex-shrink: 0;">
+
+        <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="btn btn-primary drawer-cta-btn">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" style="flex-shrink: 0;">
             <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
             <path d="M17.4 9.6L14.4 12.6L3.6 1.8C4.1 1.3 4.8 1.1 5.6 1.5L17.4 8.2C18.2 8.7 18.2 9.2 17.4 9.6Z" fill="#00F076"/>
             <path d="M17.4 15.6L5.6 22.3C4.8 22.7 4.1 22.5 3.6 22L14.4 11.2L17.4 14.2C18.2 14.6 18.2 15.2 17.4 15.6Z" fill="#FF3333"/>
             <path d="M21.6 12L17.4 9.6L14.4 12.6L17.4 15.6L21.6 13.2C22.4 12.7 22.4 12.3 21.6 12Z" fill="#FFBA00"/>
           </svg>
-          <span>Install Now</span>
+          <div class="drawer-cta-text">
+            <span class="drawer-cta-title">Install VIDZA Player</span>
+            <span class="drawer-cta-sub">Free on Google Play</span>
+          </div>
         </a>
+
+        <div class="drawer-footer-note">com.skeltolabs.vidza • Built by SkeltoLabs</div>
       </div>
-    </div>
+    </aside>
   </div>
 
   <main class="main-content">
