@@ -1,0 +1,1849 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>VIDZA Player — Best All Format 4K Video Player & Aesthetic Music Player for Android & TV</title>
+
+  <!-- Primary Search Engine Meta Tags -->
+  <meta name="title" content="VIDZA Player — Best All Format 4K Video Player & Aesthetic Music Player for Android & TV">
+  <meta name="description"
+    content="VIDZA Player is the best all-format 4K HDR video player app and aesthetic music player for Android Smartphones and Android TV. Experience real-time color adjustment, sub-zero night mode, synchronized karaoke lyrics, 5-band precision equalizer, and 200% audio boost free with non-intrusive ads.">
+  <meta name="keywords"
+    content="video player app, best video player, multi video player, all type video player, all format video player, 4k video player, best audio player, music player, aesthetic music player, hdr video player, mkv player, mp4 player, flac player, offline video player, android tv video player, google tv player, media3 exoplayer, ffmpeg player, synchronized lyrics player, karaoke lyrics music player, 5 band equalizer, sub zero night mode, color adjustment video player, free video player, skeltolabs vidza">
+  <meta name="author" content="SkeltoLabs">
+  <meta name="application-name" content="VIDZA Player">
+  <meta name="theme-color" content="#07080D">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Search Engine Bot Directives (Google, Bing, Applebot, Yahoo, DuckDuckGo, Yandex) -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://vidza.skeltolabs.com/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://vidza.skeltolabs.com/">
+  <meta property="og:site_name" content="VIDZA Player">
+  <meta property="og:title" content="VIDZA Player — Best All Format 4K Video Player & Aesthetic Music Player">
+  <meta property="og:description"
+    content="Play all video & audio formats in cinematic 4K HDR. Real-time color tuning, sub-zero night mode, synced karaoke lyrics, 5-band EQ, and non-intrusive ads on Android & TV.">
+  <meta property="og:image" content="https://vidza.skeltolabs.com/assets/images/tv_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="VIDZA Player on Android TV and Smartphone">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vidza.skeltolabs.com/">
+  <meta name="twitter:title" content="VIDZA Player — Best All Format 4K Video Player & Aesthetic Music Player">
+  <meta name="twitter:description"
+    content="All-format 4K HDR video player & aesthetic audio player. Free playback, color tuning, synced lyrics, 5-band EQ on Android & Android TV.">
+  <meta name="twitter:image" content="https://vidza.skeltolabs.com/assets/images/tv_preview.png">
+
+  <!-- Schema.org Structured Data (JSON-LD) for Google Rich Snippets & Search Graph -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://vidza.skeltolabs.com/#software",
+        "name": "VIDZA Player",
+        "alternateName": "Vidza",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Android 8.0+, Android TV, Google TV, ChromeOS",
+        "url": "https://vidza.skeltolabs.com/",
+        "image": "https://vidza.skeltolabs.com/assets/images/app_icon.png",
+        "screenshot": "https://vidza.skeltolabs.com/assets/images/tv_preview.png",
+        "description": "VIDZA Player is an all-format 4K HDR video player and aesthetic music player for Android and TV. Experience real-time color adjustment, sub-zero night mode, karaoke lyrics, 5-band equalizer, and 200% audio boost.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "@id": "https://vidza.skeltolabs.com/#organization"
+        },
+        "featureList": [
+          "4K Ultra HD & HDR10 Playback with hardware acceleration",
+          "Real-time video color adjustment (Saturation, Brightness, Contrast)",
+          "Sub-zero night mode with eye-comfort dimmer",
+          "Aesthetic music player with synchronized karaoke lyrics",
+          "5-band precision graphic equalizer with bass boost",
+          "Universal codec support via FFmpeg & Media3 (MKV, MP4, FLAC, AAC, etc.)",
+          "Dedicated 10-foot Android TV & Google TV remote-first interface"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://vidza.skeltolabs.com/#organization",
+        "name": "SkeltoLabs",
+        "url": "https://vidza.skeltolabs.com/",
+        "logo": "https://vidza.skeltolabs.com/assets/images/app_icon.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "support@skeltolabs.com",
+          "contactType": "Customer Support"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vidza.skeltolabs.com/#website",
+        "url": "https://vidza.skeltolabs.com/",
+        "name": "VIDZA Player",
+        "publisher": {
+          "@id": "https://vidza.skeltolabs.com/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+  <link rel="apple-touch-icon" href="assets/images/app_icon.png">
+
+  <!-- Performance Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/animations.css?v=6.0">
+  <link rel="stylesheet" href="css/style.css?v=6.0">
+
+  <!-- Inline critical overrides — always fresh, guaranteed no-cache -->
+  <style>
+    /* ===== MOBILE LAYOUT (max 768px) & STRICT ZERO-OVERFLOW ENFORCEMENT ===== */
+    html, body {
+      overflow-x: hidden !important;
+      max-width: 100% !important;
+      width: 100% !important;
+      position: relative;
+    }
+
+    .main-content {
+      overflow-x: hidden !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    .container {
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .stair-drawer-overlay:not(.active) {
+      display: none !important;
+    }
+
+    .ambient-mesh {
+      overflow: hidden !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+
+    @media (max-width: 768px) {
+      /* Hero stage overlap on top (under/over controls) and bottom */
+      .hero-device-toggle-wrap {
+        position: relative !important;
+        z-index: 30 !important;
+      }
+
+      .hero-stage {
+        margin-top: -24px !important;
+        position: relative !important;
+        z-index: 22 !important;
+      }
+
+      .hero-devices-showcase {
+        margin-top: -10px !important;
+        margin-bottom: -22px !important;
+        overflow: visible !important;
+      }
+
+      /* Scrollable filter pill row with strict width boundary */
+      .feature-filters-wrap {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start !important;
+        padding: 4px 0 10px 0;
+        margin-bottom: 12px !important;
+        scrollbar-width: none;
+        gap: 6px !important;
+      }
+
+      .feature-filters-wrap::-webkit-scrollbar {
+        display: none;
+      }
+
+      .feature-filter-btn {
+        flex: 0 0 auto !important;
+        scroll-snap-align: start;
+        padding: 6px 12px !important;
+        font-size: 0.75rem !important;
+        gap: 5px !important;
+      }
+
+      /* Single-column feature grid - Ultra-compact sizing for phone only */
+      .features-grid {
+        grid-template-columns: 1fr !important;
+        gap: 6px !important;
+      }
+
+      .feature-card {
+        padding: 9px 12px !important;
+        border-radius: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 3px !important;
+        min-height: auto !important;
+      }
+
+      .feature-card-badge {
+        font-size: 0.58rem !important;
+        padding: 1px 6px !important;
+        margin-bottom: 2px !important;
+        border-radius: 4px !important;
+        align-self: flex-start !important;
+        letter-spacing: 0.5px !important;
+      }
+
+      .feature-icon-wrap {
+        width: 26px !important;
+        height: 26px !important;
+        border-radius: 7px !important;
+        margin-bottom: 2px !important;
+      }
+
+      .feature-icon-wrap .material-symbols-rounded {
+        font-size: 15px !important;
+      }
+
+      .feature-title {
+        font-size: 0.85rem !important;
+        margin-bottom: 2px !important;
+        line-height: 1.25 !important;
+      }
+
+      .feature-desc {
+        font-size: 0.73rem !important;
+        line-height: 1.35 !important;
+        margin: 0 !important;
+      }
+
+      /* Redundant availability chips hidden on mobile to bring devices into direct view */
+      .hero-devices-row {
+        display: none !important;
+      }
+
+      /* Showcase tabs single horizontal swipeable row (mobile view friendly) */
+      .showcase-tabs-nav {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+        scroll-snap-type: x mandatory !important;
+        justify-content: flex-start !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 4px 4px 10px 4px !important;
+        gap: 7px !important;
+        margin-bottom: 14px !important;
+        scrollbar-width: none !important;
+      }
+
+      .showcase-tabs-nav::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      .showcase-tab-btn {
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+        scroll-snap-align: center !important;
+        font-size: 0.78rem !important;
+        padding: 6px 13px !important;
+        border-radius: var(--radius-full) !important;
+        gap: 6px !important;
+        display: inline-flex !important;
+      }
+
+      .showcase-tab-btn .material-symbols-rounded {
+        font-size: 16px !important;
+      }
+
+      /* Showcase image perfectly centered horizontally and vertically */
+      .showcase-media-col {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        text-align: center !important;
+        order: 1 !important;
+      }
+
+      .showcase-text-col {
+        order: 2 !important;
+        width: 100% !important;
+      }
+
+      .showcase-bezel-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        position: relative !important;
+      }
+
+      .showcase-preview-frame {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+      }
+
+      .showcase-screen-img {
+        display: block !important;
+        margin: 0 auto !important;
+        max-width: 82% !important;
+        max-height: 330px !important;
+        height: auto !important;
+        object-fit: contain !important;
+      }
+
+      /* FAQ filter scroll container with momentum and smooth sliding */
+      .faq-filters-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch !important;
+        box-sizing: border-box !important;
+        scrollbar-width: none !important;
+        margin-bottom: 16px !important;
+      }
+
+      .faq-filters-wrapper::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      .faq-filters-track {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        scroll-snap-type: x mandatory !important;
+        box-sizing: border-box !important;
+        scrollbar-width: none !important;
+        gap: 6px !important;
+        padding: 4px 6px !important;
+        justify-content: flex-start !important;
+      }
+
+      .faq-filters-track::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      .faq-filter-btn {
+        flex: 0 0 auto !important;
+        white-space: nowrap !important;
+        scroll-snap-align: center !important;
+        padding: 6px 12px !important;
+        font-size: 0.78rem !important;
+        gap: 5px !important;
+      }
+
+      /* Section spacing tighter */
+      .section {
+        padding: 34px 0 !important;
+      }
+
+      .section-header {
+        margin-bottom: 18px !important;
+      }
+    }
+
+    /* ===== LIGHT MODE MOBILE: show white backgrounds cleanly ===== */
+    @media (max-width: 768px) {
+      [data-theme="light"] .feature-card {
+        background: #FFFFFF !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
+      }
+
+      [data-theme="light"] .feature-filter-btn {
+        background: #FFFFFF !important;
+      }
+
+      [data-theme="light"] .stats-banner {
+        background: #FFFFFF !important;
+      }
+
+      [data-theme="light"] .stat-item {
+        background: rgba(139, 47, 201, 0.04) !important;
+        border: 1px solid rgba(139, 47, 201, 0.1) !important;
+      }
+
+      [data-theme="light"] .device-category-card {
+        background: #FFFFFF !important;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05) !important;
+      }
+
+      [data-theme="light"] .faq-item {
+        background: #FFFFFF !important;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04) !important;
+      }
+
+      [data-theme="light"] .showcase-display-area {
+        background: #FFFFFF !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+      }
+    }
+  </style>
+
+  <!-- Structured Data / JSON-LD Schema for Google & Bing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://vidza.skeltolabs.com/#software",
+        "name": "VIDZA Player",
+        "operatingSystem": "Android 8.0+, Android TV, Google TV, Fire OS",
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Video Players & Editors, Audio Players",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Best all-format 4K HDR video player app and aesthetic music player for Android Smartphones and Android TV. Features real-time color adjustment, sub-zero night mode, synchronized karaoke lyrics, and 5-band equalizer free with non-intrusive ads.",
+        "image": "https://vidza.skeltolabs.com/assets/images/app_icon.png",
+        "screenshot": [
+          "https://vidza.skeltolabs.com/assets/images/phone_player.png",
+          "https://vidza.skeltolabs.com/assets/images/phone_color_adjust.png",
+          "https://vidza.skeltolabs.com/assets/images/stream.png",
+          "https://vidza.skeltolabs.com/assets/images/night%20mode%20and%20dimness.png",
+          "https://vidza.skeltolabs.com/assets/images/phone_equalizer.png",
+          "https://vidza.skeltolabs.com/assets/images/phone_library.png",
+          "https://vidza.skeltolabs.com/assets/images/phone_lyrics.png",
+          "https://vidza.skeltolabs.com/assets/images/tv_preview.png"
+        ],
+        "author": {
+          "@type": "Organization",
+          "name": "SkeltoLabs",
+          "url": "https://vidza.skeltolabs.com"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://vidza.skeltolabs.com/#website",
+        "url": "https://vidza.skeltolabs.com/",
+        "name": "VIDZA Player Official Website",
+        "description": "Next-Gen Cinematic Video & Audio Player for Android & TV",
+        "publisher": {
+          "@type": "Organization",
+          "name": "SkeltoLabs",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://vidza.skeltolabs.com/assets/images/app_icon.png"
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vidza.skeltolabs.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does VIDZA's real-time Color Adjustment and 8 Picture Presets work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA Player integrates an in-pipeline GPU-accelerated ColorMatrix post-processor. You can fine-tune 6 precision picture parameters in real time: Brightness, Contrast, Saturation, Vibrance, Warmth, and Sharpness (-100 to +100). Or instantly tap one of 8 handcrafted cinematic presets: Vivid HDR, AMOLED Deep, Cinematic Warm, Cool Cyan, Film Noir, Vintage Film, and Cyberpunk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Night Mode & Eye Comfort Dimmer, and how does it protect my eyes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA's Sub-Zero Night Dimmer uses software-layer luminance attenuation to lower screen brightness far below your device's physical minimum limit. Combined with our adjustable Eye Comfort Warm Shield, it filters out high-frequency blue light to prevent eye fatigue and melatonin suppression while watching in bed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Synchronized Lyrics mode work for audio playback?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA transforms your audio player into a real-time karaoke studio. The player automatically detects embedded ID3 lyrics, parses local .lrc files, and synchronizes the glowing active line in real time with millisecond precision and vocal offset calibration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the 5-band equalizer and 200% Volume Boost work safely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA uses a custom in-pipeline Media3 32-bit floating point PCM audio processor with 5 calibrated frequency bands (60Hz, 230Hz, 910Hz, 3.6kHz, and 14kHz). It features an anti-clipping headroom limiter that prevents harsh audio distortion and protects small phone and TV speakers while boosting dialogue clarity up to +200%."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Ambient Dynamic Lighting & Grid (Purple & Red) -->
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="ambient-blob-purple"></div>
+    <div class="ambient-blob-red"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       MINIMALIST HEADER (Theme Toggle + Stair Menu ONLY, No Header Download)
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo-wrap" aria-label="VIDZA Player Home">
+        <!-- Official VIDZA PLAYER Vector SVG with glowing play icon in letter A -->
+        <svg class="brand-svg-logo" viewBox="0 0 1500 370" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="vidzaGrad" x1="0" y1="337" x2="0" y2="570" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#FFFFFF" />
+              <stop offset="0.6" stop-color="#F8FAFF" />
+              <stop offset="1" stop-color="#EED5FF" />
+            </linearGradient>
+            <linearGradient id="playGrad" x1="0" y1="466" x2="0" y2="555" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#FF2A55" />
+              <stop offset="1" stop-color="#AB47E8" />
+            </linearGradient>
+            <linearGradient id="playerGrad" x1="0" y1="625" x2="0" y2="693" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#FFA8BA" />
+              <stop offset="1" stop-color="#C084FC" />
+            </linearGradient>
+          </defs>
+          <g transform="translate(-38, -337)">
+            <!-- V -->
+            <path class="logo-vidza"
+              d="M38,343L38,347L44,358L46,360L48,365L58,380L66,395L73,405L75,410L90,433L106,461L109,464L111,469L115,474L120,484L129,497L130,500L140,515L150,533L156,541L157,544L161,550L167,556L170,558L176,559L177,560L211,560L212,559L216,559L222,556L226,552L239,533L240,530L251,515L254,509L257,506L258,503L270,486L271,483L281,469L282,466L289,457L290,454L302,437L303,434L311,423L312,420L315,417L325,402L326,399L341,378L342,375L352,361L353,358L361,346L360,341L357,338L354,338L353,337L309,337L300,340L293,348L284,364L278,372L271,385L265,393L261,401L257,406L256,409L234,443L233,446L227,454L222,464L218,469L217,472L203,494L198,497L193,497L187,492L181,481L179,479L172,465L168,460L161,446L159,444L155,435L148,425L144,416L131,395L119,372L114,365L104,345L99,340L91,337L46,337L45,338L42,338Z"
+              fill="url(#vidzaGrad)" fill-rule="evenodd" />
+            <!-- I -->
+            <path class="logo-vidza"
+              d="M415,337L411,339L408,344L408,553L410,557L415,560L459,560L463,558L466,553L466,344L465,341L460,337Z"
+              fill="url(#vidzaGrad)" fill-rule="evenodd" />
+            <!-- D -->
+            <path class="logo-vidza"
+              d="M529,340L528,342L528,552L531,555L533,556L704,556L705,555L720,554L721,553L725,553L726,552L729,552L730,551L733,551L734,550L737,550L746,547L765,538L781,526L797,507L804,493L807,484L807,481L810,472L811,461L812,460L812,432L811,431L810,418L809,417L809,413L808,412L806,402L797,383L787,370L780,363L768,354L757,348L755,348L750,345L741,342L738,342L733,340L729,340L728,339L712,338L711,337L533,337ZM585,382L588,379L688,379L689,380L696,380L697,381L702,381L703,382L710,383L723,389L729,393L740,404L747,417L749,423L749,426L750,427L750,432L751,433L751,459L750,460L750,464L749,465L749,468L747,474L743,482L738,488L736,492L725,501L713,507L703,509L702,510L698,510L697,511L691,511L690,512L587,512L585,510Z"
+              fill="url(#vidzaGrad)" fill-rule="evenodd" />
+            <!-- Z -->
+            <path class="logo-vidza"
+              d="M864,340L863,342L863,372L865,376L868,378L1013,378L1015,380L1015,382L997,399L992,402L982,412L976,416L961,430L932,454L923,463L917,467L907,477L901,481L893,489L863,514L860,520L860,550L861,553L865,556L1047,556L1049,557L1050,556L1118,556L1121,553L1122,551L1123,521L1121,515L1117,512L962,512L961,511L954,511L952,508L955,503L956,503L983,479L989,475L997,467L1003,463L1062,413L1067,410L1074,403L1083,397L1095,386L1106,378L1120,365L1121,363L1122,344L1121,341L1118,338L1116,337L868,337Z"
+              fill="url(#vidzaGrad)" fill-rule="evenodd" />
+            <!-- A -->
+            <path class="logo-vidza"
+              d="M1158,549L1158,555L1160,557L1208,557L1212,555L1224,539L1225,536L1241,512L1244,509L1245,506L1257,488L1260,485L1263,479L1266,476L1274,463L1279,457L1280,454L1283,451L1297,429L1300,426L1314,405L1321,399L1324,398L1332,398L1336,400L1342,407L1346,415L1349,418L1353,426L1359,434L1363,442L1369,450L1370,453L1389,482L1390,485L1405,508L1409,516L1419,530L1426,543L1435,555L1439,557L1488,557L1491,554L1491,549L1489,547L1488,544L1473,522L1471,517L1463,506L1459,498L1456,495L1451,485L1443,474L1442,471L1431,455L1430,452L1425,446L1418,433L1396,400L1392,392L1388,387L1387,384L1384,381L1373,362L1363,348L1356,341L1349,338L1313,338L1304,342L1295,350L1280,370L1272,383L1268,387L1239,431L1236,434L1224,453L1212,469L1207,478L1201,485L1198,491L1195,494L1181,516L1178,519L1175,525L1172,528Z"
+              fill="url(#vidzaGrad)" fill-rule="evenodd" />
+            <!-- Red-Purple Play Triangle inside A -->
+            <path class="logo-play-triangle"
+              d="M1300,466L1297,468L1295,471L1295,474L1294,475L1294,546L1296,550L1299,553L1301,554L1306,554L1309,553L1322,544L1330,540L1335,536L1338,535L1370,515L1374,511L1374,505L1372,502L1355,493L1353,491L1346,488L1341,484L1330,479L1309,466Z"
+              fill="url(#playGrad)" fill-rule="evenodd" />
+            <!-- PLAYER -->
+            <path class="logo-player"
+              d="M313,627L307,626L306,625L269,625L269,692L279,692L279,667L280,666L303,666L304,665L311,664L318,660L323,651L323,640L320,633ZM279,635L281,633L300,633L301,634L305,634L312,640L313,642L313,648L311,652L308,655L303,657L280,657L279,656Z"
+              fill="url(#playerGrad)" fill-rule="evenodd" />
+            <path class="logo-player" d="M464,625L464,692L511,692L512,683L476,683L474,681L474,625Z"
+              fill="url(#playerGrad)" fill-rule="evenodd" />
+            <path class="logo-player"
+              d="M662,625L644,661L644,663L636,678L636,680L630,692L641,692L646,682L647,678L649,676L656,676L657,675L680,675L681,676L684,676L692,692L703,692L695,676L695,674L693,672L693,670L689,663L689,661L681,646L681,644L675,634L672,625ZM666,638L668,639L670,645L673,650L673,652L679,664L678,667L655,667L654,666L655,661Z"
+              fill="url(#playerGrad)" fill-rule="evenodd" />
+            <path class="logo-player"
+              d="M811,625L840,666L840,692L850,692L850,667L864,648L867,642L874,634L880,625L867,625L862,634L856,641L846,656L845,656L841,651L824,625Z"
+              fill="url(#playerGrad)" fill-rule="evenodd" />
+            <path class="logo-player"
+              d="M1010,625L1010,692L1061,692L1061,683L1022,683L1020,681L1020,664L1022,662L1055,662L1056,661L1056,653L1022,653L1020,651L1020,635L1022,633L1060,633L1060,625Z"
+              fill="url(#playerGrad)" fill-rule="evenodd" />
+            <path class="logo-player"
+              d="M1208,625L1208,692L1218,692L1218,666L1220,664L1231,664L1232,665L1235,665L1255,692L1266,692L1256,676L1248,666L1249,663L1254,661L1260,656L1263,650L1263,640L1260,633L1255,628L1247,625ZM1218,635L1220,633L1241,633L1242,634L1246,634L1252,640L1252,649L1249,653L1246,655L1243,655L1242,656L1220,656L1218,654Z"
+              fill="url(#playerGrad)" fill-rule="evenodd" />
+          </g>
+        </svg>
+      </a>
+
+      <!-- Header Right Actions: Theme Toggle + 3-Step Stair Menu ONLY -->
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light or dark theme"
+          title="Toggle theme">
+          <span class="material-symbols-rounded" id="themeToggleIcon">light_mode</span>
+        </button>
+
+        <!-- 3-Step Staircase Menu Button -->
+        <button class="stair-menu-btn" id="stairMenuBtn" aria-label="Open navigation menu">
+          <div class="stair-icon-box" aria-hidden="true">
+            <span class="stair-bar step-1"></span>
+            <span class="stair-bar step-2"></span>
+            <span class="stair-bar step-3"></span>
+          </div>
+          <span class="stair-menu-text">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       STAIR MENU DRAWER (Staggered Cascading Navigation Panel)
+       ======================================================================== -->
+  <div class="stair-drawer-overlay" id="stairDrawerOverlay">
+    <div class="stair-drawer-panel" id="stairDrawerPanel">
+      <div class="stair-drawer-scroll-wrap">
+        <div class="stair-drawer-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/images/app_icon.png" alt="VIDZA Icon"
+              style="width: 38px; height: 38px; border-radius: 10px;">
+            <div>
+              <div
+                style="font-weight: 800; font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: var(--text-white); letter-spacing: -0.01em;">
+                VIDZA Player</div>
+              <div style="font-size: 0.74rem; color: var(--purple-light); font-weight: 600;">Official Android & TV</div>
+            </div>
+          </div>
+          <button class="modal-close-btn" id="stairDrawerClose" aria-label="Close menu" style="position: static;">
+            <span class="material-symbols-rounded">close</span>
+          </button>
+        </div>
+
+        <!-- Cascading Stair Navigation Items -->
+        <ul class="stair-nav-list">
+          <li class="stair-item">
+            <a href="#hero" class="stair-link stair-nav-anchor">
+              <div class="stair-link-left">
+                <div class="stair-link-icon">
+                  <span class="material-symbols-rounded">home</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">Overview</div>
+                  <div class="stair-link-desc">Cinematic player showcase</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">01</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="#features" class="stair-link stair-nav-anchor">
+              <div class="stair-link-left">
+                <div class="stair-link-icon">
+                  <span class="material-symbols-rounded">bolt</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">Engine Features</div>
+                  <div class="stair-link-desc">Color tuning, 5-band EQ &amp; lyrics</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">02</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="#showcase" class="stair-link stair-nav-anchor">
+              <div class="stair-link-left">
+                <div class="stair-link-icon">
+                  <span class="material-symbols-rounded">screenshot_monitor</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">Visual Showcase</div>
+                  <div class="stair-link-desc">Phone & Android TV screenshots</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">03</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="#devices" class="stair-link stair-nav-anchor">
+              <div class="stair-link-left">
+                <div class="stair-link-icon">
+                  <span class="material-symbols-rounded">devices</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">TV & Phone Ecosystem</div>
+                  <div class="stair-link-desc">Available now & roadmap</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">04</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="about.html" target="_blank" rel="noopener noreferrer" class="stair-link">
+              <div class="stair-link-left">
+                <div class="stair-link-icon" style="color: var(--purple-light);">
+                  <span class="material-symbols-rounded">info</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">About Us</div>
+                  <div class="stair-link-desc">SkeltoLabs engineering & vision</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">05</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="contact.html" target="_blank" rel="noopener noreferrer" class="stair-link">
+              <div class="stair-link-left">
+                <div class="stair-link-icon" style="color: var(--red-primary);">
+                  <span class="material-symbols-rounded">support_agent</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">Contact</div>
+                  <div class="stair-link-desc">Developer support & inquiries</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">06</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="#faq" class="stair-link stair-nav-anchor">
+              <div class="stair-link-left">
+                <div class="stair-link-icon">
+                  <span class="material-symbols-rounded">help</span>
+                </div>
+                <div>
+                  <div class="stair-link-title">FAQ & Help</div>
+                  <div class="stair-link-desc">Installation & common questions</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">07</span>
+            </a>
+          </li>
+
+          <li class="stair-item">
+            <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="stair-link"
+              style="width: 100%; border-color: rgba(0, 210, 255, 0.35); background: rgba(0, 210, 255, 0.06); text-align: left; cursor: pointer; border-radius: var(--radius-md);">
+              <div class="stair-link-left">
+                <div class="stair-link-icon" style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); display: flex; align-items: center; justify-content: center;">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                    <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
+                    <path d="M17.4 9.6L14.4 12.6L3.6 1.8C4.1 1.3 4.8 1.1 5.6 1.5L17.4 8.2C18.2 8.7 18.2 9.2 17.4 9.6Z" fill="#00F076"/>
+                    <path d="M17.4 15.6L5.6 22.3C4.8 22.7 4.1 22.5 3.6 22L14.4 11.2L17.4 14.2C18.2 14.6 18.2 15.2 17.4 15.6Z" fill="#FF3333"/>
+                    <path d="M21.6 12L17.4 9.6L14.4 12.6L17.4 15.6L21.6 13.2C22.4 12.7 22.4 12.3 21.6 12Z" fill="#FFBA00"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="stair-link-title" style="color: var(--text-white);">Install Now</div>
+                  <div class="stair-link-desc">Official Google Play Store</div>
+                </div>
+              </div>
+              <span class="stair-step-tag">08</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="stair-drawer-footer">
+        <div
+          style="display: flex; align-items: center; justify-content: space-between; font-size: 0.84rem; color: var(--text-secondary);">
+          <span>Color Scheme</span>
+          <button class="theme-toggle-btn" id="drawerThemeToggleBtn" style="width: 36px; height: 36px;"
+            aria-label="Toggle theme">
+            <span class="material-symbols-rounded" style="font-size: 20px;">dark_mode</span>
+          </button>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 9px;">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" style="flex-shrink: 0;">
+            <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
+            <path d="M17.4 9.6L14.4 12.6L3.6 1.8C4.1 1.3 4.8 1.1 5.6 1.5L17.4 8.2C18.2 8.7 18.2 9.2 17.4 9.6Z" fill="#00F076"/>
+            <path d="M17.4 15.6L5.6 22.3C4.8 22.7 4.1 22.5 3.6 22L14.4 11.2L17.4 14.2C18.2 14.6 18.2 15.2 17.4 15.6Z" fill="#FF3333"/>
+            <path d="M21.6 12L17.4 9.6L14.4 12.6L17.4 15.6L21.6 13.2C22.4 12.7 22.4 12.3 21.6 12Z" fill="#FFBA00"/>
+          </svg>
+          <span>Install Now</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <!-- ========================================================================
+         HERO SECTION
+         ======================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+
+        <!-- Status Badge -->
+        <div class="reveal-init">
+          <div class="hero-pill-badge">
+            <span class="badge-dot"></span>
+            <span>HIGH-PERFORMANCE CINEMATIC ENGINE</span>
+          </div>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-headline reveal-init delay-1">
+          The Definitive Media Experience for <span class="gradient-text-purple">Smartphones</span><br>
+          & <span class="gradient-text-red">Android TV</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle reveal-init delay-2">
+          Built with Google Media3 and custom FFmpeg architecture for ultra-smooth playback. Tailored for touch-first
+          handhelds and television screens — with real-time color adjustment, non-intrusive ads, and complete local
+          privacy.
+        </p>
+
+        <!-- CTA Buttons (Direct Google Play Store Link) -->
+        <div class="hero-cta-group reveal-init delay-3">
+          <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="gap: 10px;">
+            <svg viewBox="0 0 24 24" width="23" height="23" fill="none" style="flex-shrink: 0;">
+              <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
+              <path d="M17.4 9.6L14.4 12.6L3.6 1.8C4.1 1.3 4.8 1.1 5.6 1.5L17.4 8.2C18.2 8.7 18.2 9.2 17.4 9.6Z" fill="#00F076"/>
+              <path d="M17.4 15.6L5.6 22.3C4.8 22.7 4.1 22.5 3.6 22L14.4 11.2L17.4 14.2C18.2 14.6 18.2 15.2 17.4 15.6Z" fill="#FF3333"/>
+              <path d="M21.6 12L17.4 9.6L14.4 12.6L17.4 15.6L21.6 13.2C22.4 12.7 22.4 12.3 21.6 12Z" fill="#FFBA00"/>
+            </svg>
+            <span>Install Now</span>
+          </a>
+        </div>
+
+        <!-- Current Devices Availability Strip -->
+        <div class="hero-devices-row reveal-init delay-4">
+          <div class="platform-chip active">
+            <span class="status-dot"></span>
+            <span class="material-symbols-rounded" style="font-size: 18px;">smartphone</span>
+            <span>Android Phone</span>
+          </div>
+          <div class="platform-chip active">
+            <span class="status-dot"></span>
+            <span class="material-symbols-rounded" style="font-size: 18px;">tv</span>
+            <span>Android TV / Google TV</span>
+          </div>
+        </div>
+
+        <!-- Interactive Device Switcher Tabs -->
+        <div class="reveal-init delay-4 hero-device-toggle-wrap" id="heroDeviceToggleWrap">
+          <div class="device-toggle-container">
+            <button class="device-tab-btn active" data-device="both" id="tabBoth">
+              <span class="material-symbols-rounded">devices</span>
+              <span>All Screens</span>
+            </button>
+            <button class="device-tab-btn" data-device="tv" id="tabTv">
+              <span class="material-symbols-rounded">tv</span>
+              <span>Android TV</span>
+            </button>
+            <button class="device-tab-btn" data-device="phone" id="tabPhone">
+              <span class="material-symbols-rounded">smartphone</span>
+              <span>Smartphone</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Device Stage (Clean TV & Phone Displays with Soft Silhouette Shadow) -->
+        <div class="hero-stage reveal-init delay-5" id="heroStage">
+          <div class="hero-devices-showcase view-both" id="heroDevicesShowcase">
+            <div class="hero-devices-canvas" id="heroDevicesCanvas">
+              <!-- 1. Android TV Display (Now prominently visible) -->
+              <div class="hero-tv-wrap" id="heroTvWrap">
+                <img src="assets/images/tv_preview.png"
+                  alt="VIDZA Player on Android TV with 4K continue watching and remote navigation" class="tv-screen-img">
+              </div>
+
+              <!-- 2. Smartphone Display (Foreground overlap) -->
+              <div class="hero-phone-wrap" id="heroPhoneWrap">
+                <img src="assets/images/phone_player.png" alt="VIDZA Player Mobile Phone Gesture Interface"
+                  class="phone-screen-img">
+              </div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-tv-left float-slow">
+              <div class="badge-icon-box red">
+                <span class="material-symbols-rounded">gamepad</span>
+              </div>
+              <div>
+                <div class="badge-title">D-Pad Remote &amp; Touch</div>
+                <div class="badge-subtitle">Predictable focus &amp; zero traps</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-tv-right float-slow-reverse">
+              <div class="badge-icon-box purple">
+                <span class="material-symbols-rounded">palette</span>
+              </div>
+              <div>
+                <div class="badge-title">Real-Time Color Tuning</div>
+                <div class="badge-subtitle">8 Presets &amp; Custom Sliders</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         KEY METRICS BANNER
+         ======================================================================== -->
+    <section class="stats-banner" aria-label="Key Performance Metrics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal-init">
+            <div class="stat-number gradient-text-purple" data-target="4" data-suffix="K HDR">4K HDR</div>
+            <div class="stat-label">Hardware Accelerated 60fps</div>
+          </div>
+          <div class="stat-item reveal-init delay-1">
+            <div class="stat-number gradient-text-red" data-target="5" data-suffix="-Band">5-Band</div>
+            <div class="stat-label">Precision PCM Audio DSP</div>
+          </div>
+          <div class="stat-item reveal-init delay-2">
+            <div class="stat-number gradient-text-purple" data-target="0" data-suffix=" Trackers">0 Trackers</div>
+            <div class="stat-label">100% Offline & Private</div>
+          </div>
+          <div class="stat-item reveal-init delay-3">
+            <div class="stat-number gradient-text-red" data-target="34" data-suffix=" MB">34 MB</div>
+            <div class="stat-label">Lightweight Universal App</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FEATURES SECTION ("Why Choose VIdza")
+         ======================================================================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag-wrap red">
+            <span class="material-symbols-rounded" style="font-size: 16px;">bolt</span>
+            <span>ENGINEERED FOR POWER</span>
+          </div>
+          <h2 class="section-title">Built for Cinephiles &amp; Audiophiles</h2>
+          <p class="section-desc">
+            No bloated code, no annoying pause ads, and no complicated setups. Just pure, uncompromised media playback
+            on both your smartphone and television.
+          </p>
+        </div>
+
+        <!-- Interactive Feature Category Filter Pills -->
+        <div class="feature-filters-wrap reveal-init">
+          <button class="feature-filter-btn active" data-feature-cat="all">
+            <span class="material-symbols-rounded">select_all</span>
+            <span>All Features (12)</span>
+          </button>
+          <button class="feature-filter-btn" data-feature-cat="audio">
+            <span class="material-symbols-rounded">graphic_eq</span>
+            <span>Audiophile Sound</span>
+          </button>
+          <button class="feature-filter-btn" data-feature-cat="video">
+            <span class="material-symbols-rounded">palette</span>
+            <span>Color &amp; Visuals</span>
+          </button>
+          <button class="feature-filter-btn" data-feature-cat="core">
+            <span class="material-symbols-rounded">speed</span>
+            <span>Core &amp; Touch HUD</span>
+          </button>
+          <button class="feature-filter-btn" data-feature-cat="privacy">
+            <span class="material-symbols-rounded">shield_lock</span>
+            <span>Offline &amp; Streaming</span>
+          </button>
+        </div>
+
+        <div class="features-grid" id="featuresGrid">
+          <!-- Card 1: Media3 & FFmpeg Core -->
+          <div class="feature-card highlight reveal-init" data-category="core">
+            <div class="feature-card-badge">MEDIA3 PIPELINE</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">speed</span>
+            </div>
+            <h3 class="feature-title">Media3 &amp; FFmpeg Core</h3>
+            <p class="feature-desc">
+              State-of-the-art playback pipeline with ExoPlayer Media3 and custom FFmpeg audio/video decoders. Automatic
+              hardware acceleration with seamless software fallback.
+            </p>
+          </div>
+
+          <!-- Card 2: Color Tuning -->
+          <div class="feature-card highlight reveal-init delay-1" data-category="video">
+            <div class="feature-card-badge">COLOR ENGINE</div>
+            <div class="feature-icon-wrap"
+              style="background: rgba(255, 42, 85, 0.12); border-color: rgba(255, 42, 85, 0.3); color: var(--red-primary);">
+              <span class="material-symbols-rounded">palette</span>
+            </div>
+            <h3 class="feature-title">Real-Time Color Tuning &amp; 8 Presets</h3>
+            <p class="feature-desc">
+              Hardware-accelerated ColorMatrix post-processing. Precision sliders for Brightness, Contrast, Saturation,
+              Vibrance, Warmth, and Sharpness plus 8 cinematic presets (Vivid HDR, AMOLED Deep, Film Noir, Cyberpunk).
+            </p>
+          </div>
+
+          <!-- Card 3: 5-Band DSP -->
+          <div class="feature-card reveal-init delay-2" data-category="audio">
+            <div class="feature-card-badge">AUDIO DSP</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">equalizer</span>
+            </div>
+            <h3 class="feature-title">5-Band PCM DSP &amp; Limiter</h3>
+            <p class="feature-desc">
+              5 calibrated frequency bands (60Hz, 230Hz, 910Hz, 3.6kHz, 14kHz) running in 32-bit float PCM before
+              AudioTrack. Bit-perfect passthrough with anti-clipping limiter.
+            </p>
+          </div>
+
+          <!-- Card 4: Sub-Zero Night Mode -->
+          <div class="feature-card reveal-init" data-category="video">
+            <div class="feature-card-badge">EYE COMFORT</div>
+            <div class="feature-icon-wrap"
+              style="background: rgba(171, 71, 232, 0.12); border-color: rgba(171, 71, 232, 0.3); color: var(--purple-light);">
+              <span class="material-symbols-rounded">bedtime</span>
+            </div>
+            <h3 class="feature-title">Sub-Zero Night Mode &amp; Dimmer</h3>
+            <p class="feature-desc">
+              Lower brightness below Android’s hardware minimum for dark bedroom viewing. Features an adjustable Eye
+              Comfort amber blue-light filter to prevent strain and protect sleep quality.
+            </p>
+          </div>
+
+          <!-- Card 5: Dual-Edge Touch HUD -->
+          <div class="feature-card reveal-init delay-1" data-category="core">
+            <div class="feature-card-badge">TOUCH GESTURES</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">swipe</span>
+            </div>
+            <h3 class="feature-title">Dual-Edge Touch HUD</h3>
+            <p class="feature-desc">
+              Intuitive left-edge brightness swipe, right-edge volume boost swipe (up to 200%), horizontal double-tap
+              seek, and pinch-to-zoom (Fit, Stretch, Fill, 100%).
+            </p>
+          </div>
+
+          <!-- Card 6: Synchronized Lyrics -->
+          <div class="feature-card highlight reveal-init delay-2" data-category="audio">
+            <div class="feature-card-badge">KARAOKE STUDIO</div>
+            <div class="feature-icon-wrap"
+              style="background: rgba(255, 42, 85, 0.12); border-color: rgba(255, 42, 85, 0.3); color: var(--red-primary);">
+              <span class="material-symbols-rounded">lyrics</span>
+            </div>
+            <h3 class="feature-title">Synchronized Karaoke Lyrics</h3>
+            <p class="feature-desc">
+              Transform music listening into a visual karaoke studio. Auto-scrolling synchronized .lrc lyrics with
+              purple-to-red neon active line glow, font customization, and millisecond timing sync.
+            </p>
+          </div>
+
+          <!-- Card 7: Lossless & 24-Bit Studio Audio -->
+          <div class="feature-card highlight reveal-init" data-category="audio">
+            <div class="feature-card-badge">AUDIOPHILE SOUND</div>
+            <div class="feature-icon-wrap"
+              style="background: rgba(171, 71, 232, 0.12); border-color: rgba(171, 71, 232, 0.3); color: var(--purple-light);">
+              <span class="material-symbols-rounded">music_note</span>
+            </div>
+            <h3 class="feature-title">Lossless &amp; 24-Bit Studio Audio</h3>
+            <p class="feature-desc">
+              Bit-perfect PCM decoding for FLAC, ALAC, WAV, and DSD. Ultra-low latency audio pipeline with automatic
+              sample-rate matching for uncompressed acoustic fidelity.
+            </p>
+          </div>
+
+          <!-- Card 8: Advanced Subtitle Studio -->
+          <div class="feature-card reveal-init delay-1" data-category="video">
+            <div class="feature-card-badge">SUBTITLE STUDIO</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">subtitles</span>
+            </div>
+            <h3 class="feature-title">Advanced Subtitle Studio</h3>
+            <p class="feature-desc">
+              Full styling for SSA/ASS, SRT, and VTT subtitles. ZIP-slip safe subtitle archive extraction, custom text
+              sizing, background shadows, and audio delay sync.
+            </p>
+          </div>
+
+          <!-- Card 9: Instant Video-to-Audio -->
+          <div class="feature-card reveal-init delay-2" data-category="audio">
+            <div class="feature-card-badge">AUDIO CONVERTER</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">audio_file</span>
+            </div>
+            <h3 class="feature-title">Instant Video-to-Audio</h3>
+            <p class="feature-desc">
+              Extract lossless MP3 or AAC audio directly from any video in seconds. Enjoy seamless background audio
+              playback with full lockscreen MediaSession controls.
+            </p>
+          </div>
+
+          <!-- Card 10: Picture-in-Picture -->
+          <div class="feature-card reveal-init" data-category="core">
+            <div class="feature-card-badge">MULTITASKING</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">picture_in_picture</span>
+            </div>
+            <h3 class="feature-title">Picture-in-Picture (PiP)</h3>
+            <p class="feature-desc">
+              Multitask without missing a single frame. Floating resizable PiP window for all video streams, with
+              background audio continuation when screen is locked.
+            </p>
+          </div>
+
+          <!-- Card 11: Local & Network Streaming -->
+          <div class="feature-card reveal-init delay-1" data-category="privacy">
+            <div class="feature-card-badge">NETWORK PLAY</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">lan</span>
+            </div>
+            <h3 class="feature-title">Local &amp; Network Streaming</h3>
+            <p class="feature-desc">
+              Play local files from internal storage, SD cards, and USB OTG drives, or stream directly over your home
+              network with SMB, WebDAV, HLS, DASH, and RTSP.
+            </p>
+          </div>
+
+          <!-- Card 12: Local Privacy -->
+          <div class="feature-card highlight reveal-init delay-2" data-category="privacy">
+            <div class="feature-card-badge">100% PRIVATE</div>
+            <div class="feature-icon-wrap">
+              <span class="material-symbols-rounded">shield_lock</span>
+            </div>
+            <h3 class="feature-title">Local Privacy &amp; Zero Spyware</h3>
+            <p class="feature-desc">
+              No mandatory accounts, no cloud dependencies, and zero invasive tracking SDKs. Your watch history,
+              playlists, and personal media files remain completely private on your local hardware.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         INTERACTIVE SCREENSHOT SHOWCASE
+         ======================================================================== -->
+    <section class="section" id="showcase">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag-wrap red">
+            <span class="material-symbols-rounded" style="font-size: 16px;">screenshot_monitor</span>
+            <span>VISUAL SHOWCASE</span>
+          </div>
+          <h2 class="section-title">Designed for Modern Displays</h2>
+          <p class="section-desc">
+            Explore authentic screenshots and interface details from the actual VIdza mobile and TV builds.
+          </p>
+        </div>
+
+        <!-- Showcase Tab Selectors -->
+        <div class="showcase-tabs-nav reveal-init">
+          <button class="showcase-tab-btn active" data-tab="player">
+            <span class="material-symbols-rounded">play_circle</span>
+            <span>Phone 4K Player</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="color">
+            <span class="material-symbols-rounded">palette</span>
+            <span>Color & Presets</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="stream">
+            <span class="material-symbols-rounded">podcasts</span>
+            <span>Network Stream</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="night">
+            <span class="material-symbols-rounded">bedtime</span>
+            <span>Night Mode</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="equalizer">
+            <span class="material-symbols-rounded">graphic_eq</span>
+            <span>5-Band Equalizer</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="library">
+            <span class="material-symbols-rounded">video_library</span>
+            <span>Media Library</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="lyrics">
+            <span class="material-symbols-rounded">lyrics</span>
+            <span>Synced Lyrics</span>
+          </button>
+          <button class="showcase-tab-btn" data-tab="tv">
+            <span class="material-symbols-rounded">tv</span>
+            <span>Android TV UI</span>
+          </button>
+        </div>
+
+        <!-- Showcase Display Card -->
+        <div class="showcase-display-area reveal-init delay-1">
+          <!-- Text Details Column -->
+          <div class="showcase-text-col">
+            <div class="section-tag-wrap" style="margin-bottom: 12px;">
+              <span class="material-symbols-rounded" style="font-size: 16px;">verified</span>
+              <span>AUTHENTIC VIDZA BUILD</span>
+            </div>
+            <h3 class="showcase-title" id="showcaseTitle">Cinematic 4K HDR Touch Player</h3>
+            <p class="showcase-desc" id="showcaseDesc">
+              Powered by Media3 and custom FFmpeg decoders. Enjoy gesture-based HUD for instant brightness and volume
+              control up to 200%, pinch-to-zoom, and frame-accurate seek.
+            </p>
+            <ul class="showcase-features-list" id="showcaseList">
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Dual-edge swipe gestures: Brightness & 200% Volume</span>
+              </li>
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Hardware HDR10, Dolby Vision & 10-bit decoding</span>
+              </li>
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Format pill badges: 4K UHD, MKV, HEVC, Multi-Audio</span>
+              </li>
+              <li>
+                <span class="material-symbols-rounded">check_circle</span>
+                <span>Pinch-to-zoom: Fit, Stretch, 100%, or Crop-to-Fill</span>
+              </li>
+            </ul>
+            <div class="showcase-actions-row">
+              <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="gap: 8px;">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" style="flex-shrink: 0;">
+                  <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
+                  <path d="M17.4 9.6L14.4 12.6L3.6 1.8C4.1 1.3 4.8 1.1 5.6 1.5L17.4 8.2C18.2 8.7 18.2 9.2 17.4 9.6Z" fill="#00F076"/>
+                  <path d="M17.4 15.6L5.6 22.3C4.8 22.7 4.1 22.5 3.6 22L14.4 11.2L17.4 14.2C18.2 14.6 18.2 15.2 17.4 15.6Z" fill="#FF3333"/>
+                  <path d="M21.6 12L17.4 9.6L14.4 12.6L17.4 15.6L21.6 13.2C22.4 12.7 22.4 12.3 21.6 12Z" fill="#FFBA00"/>
+                </svg>
+                <span>Install Now</span>
+              </a>
+              <div class="showcase-counter-wrap">
+                <span id="showcaseCurrentIndex">1</span> / <span id="showcaseTotalCount">8</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Media Showcase Column (Elevated & First on Mobile) -->
+          <div class="showcase-media-col">
+            <div class="showcase-bezel-wrapper">
+              <!-- Touch & Click Navigation Chevrons -->
+              <button class="showcase-nav-arrow prev" id="showcasePrevBtn" aria-label="Previous screenshot">
+                <span class="material-symbols-rounded">chevron_left</span>
+              </button>
+              <button class="showcase-nav-arrow next" id="showcaseNextBtn" aria-label="Next screenshot">
+                <span class="material-symbols-rounded">chevron_right</span>
+              </button>
+
+              <div class="showcase-preview-frame" id="showcasePreviewFrame" title="Tap to view fullscreen">
+                <img src="assets/images/phone_player.png" alt="VIDZA Player Screenshot" id="showcaseImg"
+                  class="showcase-screen-img">
+              </div>
+
+              <!-- Mobile Dot Pagination Indicators -->
+              <div class="showcase-dots-indicator" id="showcaseDots">
+                <span class="dot active" data-index="0" title="Phone 4K Player"></span>
+                <span class="dot" data-index="1" title="Color & Presets"></span>
+                <span class="dot" data-index="2" title="Network Stream"></span>
+                <span class="dot" data-index="3" title="Night Mode"></span>
+                <span class="dot" data-index="4" title="5-Band Equalizer"></span>
+                <span class="dot" data-index="5" title="Media Library"></span>
+                <span class="dot" data-index="6" title="Synced Lyrics"></span>
+                <span class="dot" data-index="7" title="Android TV UI"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         MULTI-DEVICE ECOSYSTEM & ROADMAP
+         ======================================================================== -->
+    <section class="section" id="devices">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag-wrap red">
+            <span class="material-symbols-rounded" style="font-size: 16px;">devices</span>
+            <span>UNIFIED PLATFORM ECOSYSTEM</span>
+          </div>
+          <h2 class="section-title">One Codebase. Optimized for Every Screen.</h2>
+          <p class="section-desc">
+            VIDZA Player is strictly built as a unified single application. No duplicate engines or fragmented
+            experiences.
+          </p>
+        </div>
+
+        <!-- Mobile-Only Device Tabs -->
+        <div class="devices-mobile-nav reveal-init">
+          <button class="device-cat-btn active" data-device-target="phone">
+            <span class="material-symbols-rounded">smartphone</span>
+            <span>Smartphone</span>
+          </button>
+          <button class="device-cat-btn" data-device-target="tv">
+            <span class="material-symbols-rounded">tv</span>
+            <span>Android TV</span>
+          </button>
+        </div>
+
+        <div class="devices-split-grid">
+          <!-- Card 1: Android Smartphones -->
+          <div class="device-category-card ready reveal-init active-device-card" id="deviceCardPhone">
+            <div class="device-status-badge live">
+              <span class="status-dot"></span>
+              <span>Available Now</span>
+            </div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 12px;">Android Smartphone Edition</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+              Precision handheld entertainment engineered for modern AMOLED and high-refresh-rate smartphone screens.
+            </p>
+
+            <div class="device-card-preview-wrap">
+              <img src="assets/images/phone_player.png" alt="VIDZA Smartphone Interface" class="device-card-clean-img">
+            </div>
+
+            <ul class="device-list-items">
+              <li class="device-item-row">
+                <div class="device-item-icon">
+                  <span class="material-symbols-rounded">touch_app</span>
+                </div>
+                <div>
+                  <div class="device-item-name">Dual-Edge Touch Gestures</div>
+                  <div class="device-item-desc">Left-edge brightness swipe, right-edge 200% volume boost swipe, and
+                    double-tap seeking.</div>
+                </div>
+              </li>
+
+              <li class="device-item-row">
+                <div class="device-item-icon">
+                  <span class="material-symbols-rounded">bedtime</span>
+                </div>
+                <div>
+                  <div class="device-item-name">Sub-Zero Night Dimmer &amp; Filter</div>
+                  <div class="device-item-desc">Dim below hardware minimums with amber Eye Comfort blue-light protection
+                    for bedroom viewing.</div>
+                </div>
+              </li>
+
+              <li class="device-item-row">
+                <div class="device-item-icon">
+                  <span class="material-symbols-rounded">picture_in_picture</span>
+                </div>
+                <div>
+                  <div class="device-item-name">Picture-in-Picture &amp; Background Play</div>
+                  <div class="device-item-desc">Seamless floating PiP multitasking with lockscreen MediaSession
+                    notifications.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Android TV & Google TV -->
+          <div class="device-category-card ready reveal-init delay-1" id="deviceCardTv">
+            <div class="device-status-badge live">
+              <span class="status-dot"></span>
+              <span>Available Now</span>
+            </div>
+            <h3 style="font-size: 1.8rem; margin-bottom: 12px;">Android TV & Google TV Edition</h3>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+              Cinematic big-screen entertainment crafted natively for your living room setup and remote control.
+            </p>
+
+            <div class="device-card-preview-wrap">
+              <img src="assets/images/tv_preview.png" alt="VIDZA Android TV Interface"
+                class="device-card-clean-img tv-clean-img">
+            </div>
+
+            <ul class="device-list-items">
+              <li class="device-item-row">
+                <div class="device-item-icon">
+                  <span class="material-symbols-rounded">gamepad</span>
+                </div>
+                <div>
+                  <div class="device-item-name">D-Pad Remote Focus Glow</div>
+                  <div class="device-item-desc">Luxury focus borders, predictable directional navigation, and intuitive
+                    back hierarchy.</div>
+                </div>
+              </li>
+
+              <li class="device-item-row">
+                <div class="device-item-icon">
+                  <span class="material-symbols-rounded">tv</span>
+                </div>
+                <div>
+                  <div class="device-item-name">Hardware 4K HDR10 & AV1</div>
+                  <div class="device-item-desc">Ultra-fast hardware decoding for Sony Bravia, TCL, Philips, Chromecast,
+                    and Shield TV.</div>
+                </div>
+              </li>
+
+              <li class="device-item-row">
+                <div class="device-item-icon">
+                  <span class="material-symbols-rounded">menu_open</span>
+                </div>
+                <div>
+                  <div class="device-item-name">Collapsible TV Side Navigation</div>
+                  <div class="device-item-desc">Space-efficient overlay drawer preserving full-screen media art without
+                    clutter.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FREQUENTLY ASKED QUESTIONS (FAQ) — Enhanced & Cinematic
+         ======================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header reveal-init">
+          <div class="section-tag-wrap">
+            <span class="material-symbols-rounded" style="font-size: 16px;">help_center</span>
+            <span>QUESTIONS & ANSWERS</span>
+          </div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">
+            Everything you need to know about color grading, audio DSP, synchronized lyrics, zero-ad privacy, and device
+            support.
+          </p>
+        </div>
+
+        <!-- Interactive Category Filter Pill Tabs -->
+        <div class="faq-filters-wrapper reveal-init">
+          <div class="faq-filters-track" role="tablist" aria-label="FAQ Categories">
+            <button class="faq-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span class="material-symbols-rounded">select_all</span>
+              <span>All Topics</span>
+              <span class="filter-count">8</span>
+            </button>
+            <button class="faq-filter-btn" data-filter="video" role="tab" aria-selected="false">
+              <span class="material-symbols-rounded">tune</span>
+              <span>Video & Picture</span>
+              <span class="filter-count">3</span>
+            </button>
+            <button class="faq-filter-btn" data-filter="audio" role="tab" aria-selected="false">
+              <span class="material-symbols-rounded">equalizer</span>
+              <span>Audio & Lyrics</span>
+              <span class="filter-count">2</span>
+            </button>
+            <button class="faq-filter-btn" data-filter="privacy" role="tab" aria-selected="false">
+              <span class="material-symbols-rounded">verified_user</span>
+              <span>Privacy & Devices</span>
+              <span class="filter-count">3</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="faq-grid">
+          <!-- FAQ 1: Color Adjustment (Prominent & Attractive) -->
+          <div class="faq-item active reveal-init" data-category="video">
+            <button class="faq-question" aria-expanded="true">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">palette</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">auto_awesome</span>
+                    <span>Video Picture Tuning</span>
+                  </span>
+                  <span class="faq-question-title">How does VIDZA's real-time Color Adjustment and 8 Picture Presets
+                    work?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                VIDZA Player integrates an in-pipeline GPU-accelerated ColorMatrix post-processor. You can fine-tune 6
+                precision picture parameters in real time with zero frame drop: <strong>Brightness</strong>,
+                <strong>Contrast</strong>, <strong>Saturation</strong>, <strong>Vibrance</strong>,
+                <strong>Warmth</strong>, and <strong>Sharpness</strong> (-100 to +100). Or instantly tap one of 8
+                handcrafted cinematic presets: <em>Vivid HDR</em> (punchy dynamic range), <em>AMOLED Deep</em> (inky
+                blacks), <em>Cinematic Warm</em> (3200K film warmth), <em>Cool Cyan</em> (sci-fi grade), <em>Film
+                  Noir</em> (high-contrast monochrome), <em>Vintage Film</em>, and <em>Cyberpunk</em>. Your tuning is
+                automatically remembered per container format.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">hdr_on</span> Vivid
+                    HDR</span>
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">contrast</span> AMOLED
+                    Deep</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">tune</span> 6-Axis GPU Tuning</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">speed</span> Zero Frame Drop</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2: Night Mode (Prominent & Attractive) -->
+          <div class="faq-item reveal-init delay-1" data-category="video">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">bedtime</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">visibility</span>
+                    <span>Eye Comfort & Night Watch</span>
+                  </span>
+                  <span class="faq-question-title">What is Night Mode & Eye Comfort Dimmer, and how does it protect my
+                    eyes?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Standard Android displays can only dim down to their hardware minimum, which is often uncomfortably
+                harsh in dark bedrooms. VIDZA's <strong>Sub-Zero Night Dimmer</strong> uses software-layer luminance
+                attenuation to lower screen brightness far below your device's physical minimum limit. Combined with our
+                adjustable <strong>Eye Comfort Warm Shield</strong>, it filters out high-frequency blue light to prevent
+                eye fatigue, migraine triggers, and melatonin suppression while watching in bed.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">dark_mode</span> Sub-Zero
+                    Dimming</span>
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">shield</span> Blue Light
+                    Filter</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">hotel</span> Bedtime Melatonin
+                    Guard</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">wb_twilight</span> Flicker-Free</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3: Lyrics Mode (Prominent & Attractive) -->
+          <div class="faq-item reveal-init delay-2" data-category="audio">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">lyrics</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">mic</span>
+                    <span>Synchronized Lyrics</span>
+                  </span>
+                  <span class="faq-question-title">How does the Synchronized Lyrics mode work for audio playback?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                VIDZA transforms your audio player into a real-time karaoke studio. The player automatically detects
+                embedded ID3 lyrics, parses local <code>.lrc</code> files, and lets you search or paste lyrics
+                instantly. The active singing line glows in our signature purple-to-red neon aesthetic and auto-scrolls
+                in real time with millisecond clock synchronization. You can also calibrate timing offset (±ms delay)
+                for flawless vocal alignment and customize font size and background blur styling.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">sync</span> Real-Time LRC
+                    Sync</span>
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">flare</span> Active Line
+                    Glow</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">av_timer</span> ±ms Vocal
+                    Calibration</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">music_note</span> ID3
+                    Auto-Detection</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4: 5-Band Equalizer & 200% Volume Boost -->
+          <div class="faq-item reveal-init delay-3" data-category="audio">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">equalizer</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">graphic_eq</span>
+                    <span>DSP Audio Architecture</span>
+                  </span>
+                  <span class="faq-question-title">How does the 5-band equalizer and 200% Volume Boost work
+                    safely?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                VIDZA uses a custom in-pipeline Media3 32-bit floating point PCM audio processor with 5 calibrated
+                frequency bands (60Hz, 230Hz, 910Hz, 3.6kHz, and 14kHz). It features an anti-clipping headroom limiter
+                that prevents harsh audio distortion and protects small phone and TV speakers while boosting dialogue
+                clarity up to +200%.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">volume_up</span> +200% Safe
+                    Boost</span>
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">security</span>
+                    Anti-Clipping Limiter</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">waves</span> 32-Bit Float PCM</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">tune</span> 5 Calibrated Bands</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5: Subtitles & ZIP Archive Extraction -->
+          <div class="faq-item reveal-init delay-4" data-category="video">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">subtitles</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">folder_zip</span>
+                    <span>Subtitles & Extraction</span>
+                  </span>
+                  <span class="faq-question-title">How do I load external subtitles or extract subtitles from ZIP
+                    archives?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                You can tap the Subtitle icon in the player to select any local <code>.srt</code>, <code>.ass</code>, or
+                <code>.vtt</code> file. If your subtitles are packaged inside a ZIP file, VIDZA features built-in
+                security-hardened ZIP extraction with Zip-Slip path traversal defense that safely unpacks and syncs the
+                subtitle tracks directly to your video without cluttering your storage.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">verified</span> Zip-Slip
+                    Protected</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">subtitles</span> .SRT / .ASS /
+                    .VTT</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">unarchive</span> In-Memory Unpack</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">folder_open</span> Zero Clutter
+                    Storage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6: Privacy & Offline Security -->
+          <div class="faq-item reveal-init" data-category="privacy">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">verified_user</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">lock</span>
+                    <span>Non-Intrusive Ads & Privacy</span>
+                  </span>
+                  <span class="faq-question-title">Does VIDZA Player contain ads or track my viewing activity?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                VIDZA Player is free to use and supported by transparent, non-intrusive ads via Google AdMob. We have
+                zero third-party analytics trackers, zero tracking of your media files, and no forced logins or cloud
+                accounts. Your playback history, audio bookmarks, and media files stay 100% on your local device
+                hardware.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">verified</span>
+                    Non-Intrusive Ads</span>
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">no_accounts</span> No Cloud
+                    Account</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">memory</span> 100% On-Device</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">wifi_off</span> 100% Offline
+                    Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7: App Store Availability -->
+          <div class="faq-item reveal-init delay-1" data-category="privacy">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">shopping_bag</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">storefront</span>
+                    <span>Official Distribution</span>
+                  </span>
+                  <span class="faq-question-title">Can I install VIDZA Player from Google Play and other official app
+                    stores?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                VIDZA Player is distributed officially on the Google Play Store for all Android smartphones, tablets,
+                and Android TV devices. You can install it directly from Google Play with automatic updates, verified
+                security checks, and seamless setup.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">shopping_bag</span> Google
+                    Play Store</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">verified_user</span> Play Protect
+                    Verified</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">sync</span> Automatic Updates</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">tv</span> Android TV & Google TV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8: Codec & Format Compatibility -->
+          <div class="faq-item reveal-init delay-2" data-category="privacy">
+            <button class="faq-question" aria-expanded="false">
+              <div class="faq-question-main">
+                <div class="faq-topic-icon">
+                  <span class="material-symbols-rounded">video_file</span>
+                </div>
+                <div class="faq-question-text-wrap">
+                  <span class="faq-meta-badge">
+                    <span class="material-symbols-rounded" style="font-size: 14px;">extension</span>
+                    <span>Format Compatibility</span>
+                  </span>
+                  <span class="faq-question-title">Which video, audio, and subtitle formats does VIDZA Player
+                    support?</span>
+                </div>
+              </div>
+              <div class="faq-toggle-btn">
+                <span class="material-symbols-rounded">expand_more</span>
+              </div>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                VIDZA Player supports all mainstream and specialty media formats natively. <strong>Video:</strong> MKV,
+                MP4, WebM, AVI, TS, MOV, FLV, WMV with hardware-accelerated 4K HDR10, Dolby Vision, and AV1 decoding.
+                <strong>Audio:</strong> MP3, FLAC (24-bit/192kHz lossless), AAC, OGG, WAV, OPUS, and M4A.
+                <strong>Subtitles:</strong> SSA/ASS with rich styling, SRT, VTT, and safe ZIP subtitle archives.
+                <div class="faq-chips-row">
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">high_quality</span> 4K HDR &
+                    AV1</span>
+                  <span class="faq-chip chip-accent"><span class="material-symbols-rounded">graphic_eq</span> Lossless
+                    FLAC</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">subtitles</span> SSA/ASS & SRT</span>
+                  <span class="faq-chip"><span class="material-symbols-rounded">all_inclusive</span> All-Format
+                    Core</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       LEGAL DOCUMENT VIEWER MODAL (Google Play Review & Compliance)
+       ======================================================================== -->
+  <div class="modal-overlay" id="legalModal" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="modal-box modal-content-enter" style="max-width: 820px;">
+      <button class="modal-close-btn" id="legalModalClose" aria-label="Close legal modal">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <span class="material-symbols-rounded" style="font-size: 32px; color: var(--red-primary);">policy</span>
+        <h3 id="legalModalTitle" style="font-size: 1.8rem;">Legal Information</h3>
+      </div>
+
+      <div class="legal-modal-content" id="legalModalContent">
+        <!-- Injected via JavaScript dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal">
+    <div style="position: relative; max-width: 90vw; max-height: 90vh;">
+      <button class="modal-close-btn" id="lightboxClose" style="top: -40px; right: 0; background: rgba(0,0,0,0.6);"
+        aria-label="Close image preview">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+      <img src="" alt="High resolution preview" id="lightboxImg"
+        style="max-height: 85vh; max-width: 90vw; object-fit: contain; background: transparent; filter: drop-shadow(0 20px 50px rgba(0,0,0,0.9)) drop-shadow(0 0 35px rgba(171,71,232,0.3));">
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       CLEAN BOTTOM-ONLY FOOTER (No multi-column sub-options, bottom footer only)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom-bar">
+        <div class="footer-logo-row">
+          <img src="assets/images/app_icon.png" alt="VIDZA Player Icon" class="footer-brand-icon">
+          <span class="footer-brand-name">VIDZA Player</span>
+          <span class="footer-brand-badge">Android & TV</span>
+        </div>
+
+        <nav class="footer-bottom-links" aria-label="Legal and Navigation Links">
+          <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">Privacy
+            Policy</a>
+          <span class="footer-sep" aria-hidden="true">•</span>
+          <a href="terms-of-service.html" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">Terms of
+            Service</a>
+          <span class="footer-sep" aria-hidden="true">•</span>
+          <a href="usage-disclaimer.html" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">Usage
+            Disclaimer</a>
+          <span class="footer-sep" aria-hidden="true">•</span>
+          <a href="open-source-licenses.html" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">Open
+            Source</a>
+          <span class="footer-sep" aria-hidden="true">•</span>
+          <a href="about.html" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">About Us</a>
+          <span class="footer-sep" aria-hidden="true">•</span>
+          <a href="contact.html" target="_blank" rel="noopener noreferrer" class="footer-bottom-link">Contact</a>
+        </nav>
+
+        <div class="footer-copyright-note">
+          &copy; 2026 VIDZA Player. Powered by SkeltoLabs. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/scroll-effects.js?v=6.0"></script>
+  <script src="js/main.js?v=6.0"></script>
+</body>
+
+</html>

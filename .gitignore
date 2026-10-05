@@ -1,0 +1,13 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Development / Local Server / Scratch
+server.py
+*.log
+contact_form_preview.png
+
+# Editor Directories
+.vscode/
+.idea/

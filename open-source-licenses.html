@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Open Source Licenses — VIDZA Player</title>
+  
+  <meta name="title" content="Open Source Licenses — VIDZA Player">
+  <meta name="description" content="Third-party open-source software licenses, notices, and attribution credits for VIDZA Player including Media3, FFmpeg, and Subtitle engines.">
+  <meta name="author" content="SkeltoLabs">
+  <meta name="theme-color" content="#07080D">
+
+  <link rel="canonical" href="https://vidza.skeltolabs.com/open-source-licenses.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vidza.skeltolabs.com/open-source-licenses.html">
+  <meta property="og:title" content="Open Source Licenses — VIDZA Player">
+  <meta property="og:description" content="Third-party open-source software licenses, notices, and attribution credits for VIDZA Player including Media3, FFmpeg, and Subtitle engines.">
+  <meta property="og:image" content="https://vidza.skeltolabs.com/assets/images/tv_preview.png">
+
+  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="standalone-legal-body">
+
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="ambient-blob-purple"></div>
+    <div class="ambient-blob-red"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Self-Contained Document Wrapper (No external header, no external footer) -->
+  <div class="standalone-legal-page">
+    <div class="legal-container">
+
+      <!-- Single Self-Contained Bordered Card -->
+      <article class="legal-doc-content">
+        
+        <!-- Document Header within the Border Line -->
+        <header class="in-card-header">
+          <h1 class="in-card-title">Open Source Licenses</h1>
+          <div class="in-card-meta">
+            <span>Last Updated: September 28, 2026</span>
+            <span class="meta-dot">•</span>
+            <span>Published by SkeltoLabs</span>
+            <span class="meta-dot">•</span>
+            <span>Third-Party Attributions</span>
+          </div>
+        </header>
+
+        <!-- Document Sections -->
+        <h2>1. Acknowledgement of Open Source Software</h2>
+        <p>
+          VIDZA Player is built with deep gratitude to the global open-source community. The stability, codec compatibility, subtitle fidelity, and audio rendering precision of VIDZA Player are made possible by leading open-source libraries. This document provides mandatory legal disclosures, copyright attributions, and license texts in full accordance with Google Play Developer Policies.
+        </p>
+
+        <h2>2. AndroidX Media3 & ExoPlayer</h2>
+        <p>
+          VIDZA Player utilizes the <strong>AndroidX Media3</strong> framework (including <code>media3-exoplayer</code>, <code>media3-ui</code>, and <code>media3-session</code>), developed and maintained by Google LLC.
+        </p>
+        <div class="legal-callout">
+          <p style="margin-bottom: 4px;"><strong>Project:</strong> AndroidX Media3 / ExoPlayer</p>
+          <p style="margin-bottom: 4px;"><strong>Copyright:</strong> &copy; 2023–2026 Google LLC</p>
+          <p style="margin-bottom: 0;"><strong>License:</strong> Apache License, Version 2.0</p>
+        </div>
+
+        <h2>3. FFmpeg Decoder Integration</h2>
+        <p>
+          VIDZA Player incorporates components from the <strong>FFmpeg</strong> multimedia framework under the terms of the <strong>GNU Lesser General Public License (LGPL), version 2.1 or later</strong>.
+        </p>
+        <div class="legal-callout callout-red">
+          <p style="margin-bottom: 4px;"><strong>Project:</strong> FFmpeg Multimedia Framework</p>
+          <p style="margin-bottom: 4px;"><strong>Copyright:</strong> &copy; 2000–2026 the FFmpeg developers</p>
+          <p style="margin-bottom: 0;"><strong>License:</strong> GNU Lesser General Public License (LGPL) v2.1+</p>
+        </div>
+        <p>
+          FFmpeg is dynamically linked as a shared library (<code>.so</code>) compiled specifically for standard Android architectures (<code>arm64-v8a</code>, <code>armeabi-v7a</code>, <code>x86_64</code>). In accordance with LGPL v2.1 requirements, users are entitled to obtain the exact source code, build scripts, and configuration flags used to compile the FFmpeg binaries bundled in VIDZA Player.
+        </p>
+
+        <h2>4. Open-Source Subtitle & Timed-Text Engines</h2>
+        <p>
+          VIDZA Player supports universal subtitle formats using industry-standard open-source parsing and rasterization engines:
+        </p>
+
+        <div class="legal-callout">
+          <div class="legal-callout-title">
+            Media3 Timed-Text Framework (ExoPlayer Text Track Renderer)
+          </div>
+          <p style="margin-bottom: 4px;"><strong>Maintainer:</strong> Google LLC • <strong>License:</strong> Apache License 2.0</p>
+          <p style="margin-bottom: 0;">
+            Provides synchronized timed-text decoding for <code>.srt</code> (SubRip), <code>.vtt</code> (WebVTT), <code>.ttml</code> (Timed Text Markup Language), CEA-608 and CEA-708 closed captions, and Matroska embedded soft subtitle streams with zero latency clock sync.
+          </p>
+        </div>
+
+        <div class="legal-callout" style="border-left-color: var(--red-primary); background: rgba(255, 42, 85, 0.08);">
+          <div class="legal-callout-title" style="color: var(--red-primary);">
+            libass / SSA & ASS Advanced Subtitle Renderer
+          </div>
+          <p style="margin-bottom: 4px;"><strong>Maintainer:</strong> The libass Project • <strong>License:</strong> ISC / LGPL License</p>
+          <p style="margin-bottom: 0;">
+            A portable subtitle renderer for the SubStation Alpha (<code>.ssa</code>) and Advanced SubStation Alpha (<code>.ass</code>) subtitle formats. Handles complex typography, custom vector graphics, karaoke timing, font glyph rasterization, and multi-layer styling.
+          </p>
+        </div>
+
+        <div class="legal-callout">
+          <div class="legal-callout-title">
+            Security-Hardened ZIP Subtitle Archive Extractor
+          </div>
+          <p style="margin-bottom: 4px;"><strong>Maintainer:</strong> SkeltoLabs Open Core • <strong>License:</strong> Apache License 2.0</p>
+          <p style="margin-bottom: 0;">
+            Integrated client-side decompression utility providing Zip-Slip path traversal defense when unpacking zipped subtitle archives directly into isolated cache memory.
+          </p>
+        </div>
+
+        <h2>5. Complete Bundled Open Source Library Registry</h2>
+        <div class="legal-table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>Library Name</th>
+                <th>Maintainer / Copyright Holder</th>
+                <th>License Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>AndroidX Media3 ExoPlayer</strong></td>
+                <td>Google LLC</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>Media3 Subtitle Engine (SRT/VTT/TTML)</strong></td>
+                <td>Google LLC</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>FFmpeg Native Decoders</strong></td>
+                <td>The FFmpeg Developers</td>
+                <td>GNU LGPL v2.1 or later</td>
+              </tr>
+              <tr>
+                <td><strong>libass SSA/ASS Subtitle Renderer</strong></td>
+                <td>The libass Developers</td>
+                <td>ISC License / LGPL</td>
+              </tr>
+              <tr>
+                <td><strong>Jetpack Compose Runtime & UI</strong></td>
+                <td>Google LLC</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>Kotlin Coroutines (kotlinx-coroutines)</strong></td>
+                <td>JetBrains s.r.o.</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>Material Symbols Rounded Icons</strong></td>
+                <td>Google LLC</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>AndroidX Room Database</strong></td>
+                <td>Google LLC</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>Square OkHttp</strong></td>
+                <td>Square, Inc.</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+              <tr>
+                <td><strong>Coil Image Loading Framework</strong></td>
+                <td>Coil Contributors</td>
+                <td>Apache License, Version 2.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>6. LGPL Source Code Request & Compliance</h2>
+        <p>
+          In full accordance with the GNU Lesser General Public License (LGPL) v2.1, you have the right to obtain the exact, machine-readable corresponding source code, build scripts, and configuration flags used to compile the FFmpeg shared libraries bundled within VIDZA Player.
+        </p>
+        <p>
+          To request the FFmpeg LGPL source code archive, please submit an email to our open-source compliance team with the subject line <code>LGPL Source Code Request - VIDZA Player</code>:
+        </p>
+        <div class="legal-callout">
+          <p style="margin-bottom: 4px;"><strong>Developer:</strong> SkeltoLabs Open Source Compliance</p>
+          <p style="margin-bottom: 4px;"><strong>Application:</strong> VIDZA Player (<code>com.skeltolabs.vidza</code>)</p>
+          <p style="margin-bottom: 0;"><strong>Source Request Email:</strong> <a href="mailto:vidza@skeltolabs.com?subject=LGPL%20Source%20Code%20Request%20-%20VIDZA%20Player" style="color: var(--purple-light); font-weight: 700;">vidza@skeltolabs.com</a></p>
+        </div>
+
+        <!-- In-Card Footer Stamp within the Border Line -->
+        <div class="in-card-footer">
+          &copy; 2026 VIDZA Player. Powered by SkeltoLabs. All rights reserved.
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home / Landing Page -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/app_icon.png</image:loc>
+      <image:title>VIDZA Player Official App Icon</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/phone_player.png</image:loc>
+      <image:title>VIDZA Player 4K HDR Touch Video Player Interface</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/phone_color_adjust.png</image:loc>
+      <image:title>VIDZA Player Real-Time Color Tuning and Picture Presets</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/stream.png</image:loc>
+      <image:title>VIDZA Player Direct Network Stream and Online URL Playback</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/night%20mode%20and%20dimness.png</image:loc>
+      <image:title>VIDZA Player Sub-Zero Night Mode and Eye Comfort Dimmer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/phone_equalizer.png</image:loc>
+      <image:title>VIDZA Player 5-Band Precision Graphic Equalizer and Bass Boost</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/phone_library.png</image:loc>
+      <image:title>VIDZA Player Intelligent Media Library and Folders</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/phone_lyrics.png</image:loc>
+      <image:title>VIDZA Player Synchronized Karaoke Lyrics Audio Player</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://vidza.skeltolabs.com/assets/images/tv_preview.png</image:loc>
+      <image:title>VIDZA Player 10-Foot Living Room Android TV Interface</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/about.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/contact.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/privacy-policy.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/terms-of-service.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Usage Disclaimer -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/usage-disclaimer.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Open Source Licenses -->
+  <url>
+    <loc>https://vidza.skeltolabs.com/open-source-licenses.html</loc>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

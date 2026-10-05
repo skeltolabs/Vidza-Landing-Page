@@ -1,0 +1,199 @@
+/* ==========================================================================
+   VIDZA PLAYER LANDING PAGE — ANIMATIONS & DYNAMIC EFFECTS
+   Strictly Purple & Vivid Red Palette • Ultra-Smooth 60fps Micro-Interactions
+   ========================================================================== */
+
+/* ==========================================================================
+   Luxury Fade & Appear Scroll Reveal (Smooth Blur Dissolve & 60fps Glide)
+   ========================================================================== */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(32px) scale(0.985);
+  filter: blur(8px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform, filter;
+}
+
+.reveal-active {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  filter: blur(0) !important;
+}
+
+/* Stagger delays for natural cascading flow */
+.delay-1 { transition-delay: 0.08s; }
+.delay-2 { transition-delay: 0.16s; }
+.delay-3 { transition-delay: 0.24s; }
+.delay-4 { transition-delay: 0.32s; }
+.delay-5 { transition-delay: 0.40s; }
+.delay-6 { transition-delay: 0.48s; }
+
+/* Accessibility: instant display on reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-init {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
+
+/* Subtle Ambient Glow Background Pulse (Purple & Red) */
+@keyframes ambientGlowPurple {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(30px, -25px) scale(1.12);
+    opacity: 0.65;
+  }
+}
+
+@keyframes ambientGlowRed {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(-35px, 25px) scale(1.15);
+    opacity: 0.55;
+  }
+}
+
+.ambient-blob-purple {
+  animation: ambientGlowPurple 12s ease-in-out infinite alternate;
+}
+
+.ambient-blob-red {
+  animation: ambientGlowRed 14s ease-in-out infinite alternate;
+}
+
+/* Floating Badges & Device Frames */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.float-slow {
+  animation: floatGentle 5.5s ease-in-out infinite;
+}
+
+.float-slow-reverse {
+  animation: floatReverse 6.5s ease-in-out infinite;
+}
+
+/* TV Focus Pulse Effect (Vivid Red & Purple Glow) */
+@keyframes tvFocusPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 2px var(--red-primary), 0 0 28px rgba(255, 42, 85, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 2.5px var(--purple-light), 0 0 45px rgba(171, 71, 232, 0.6);
+  }
+}
+
+.tv-focus-glow {
+  animation: tvFocusPulse 3.5s ease-in-out infinite;
+}
+
+/* Neon Gradient Shimmer on Borders and Badges */
+@keyframes borderShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.shimmer-border {
+  background-size: 200% 200%;
+  animation: borderShimmer 4s ease infinite;
+}
+
+/* Sticky Install Bar Entrance / Exit */
+.bottom-bar-hidden {
+  opacity: 0;
+  transform: translateY(130%) translateX(-50%);
+  pointer-events: none;
+}
+
+.bottom-bar-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(-50%);
+  pointer-events: auto;
+}
+
+/* Lightbox & Legal Modal Animation */
+@keyframes modalBackdropFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes modalContentZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-enter {
+  animation: modalBackdropFade 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.modal-content-enter {
+  animation: modalContentZoom 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stair Menu Cascading Entrance */
+@keyframes stairItemSlide {
+  from {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stair-menu-open .stair-item {
+  animation: stairItemSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.stair-menu-open .stair-item:nth-child(1) { animation-delay: 0.04s; }
+.stair-menu-open .stair-item:nth-child(2) { animation-delay: 0.08s; }
+.stair-menu-open .stair-item:nth-child(3) { animation-delay: 0.12s; }
+.stair-menu-open .stair-item:nth-child(4) { animation-delay: 0.16s; }
+.stair-menu-open .stair-item:nth-child(5) { animation-delay: 0.20s; }
+.stair-menu-open .stair-item:nth-child(6) { animation-delay: 0.24s; }
+.stair-menu-open .stair-item:nth-child(7) { animation-delay: 0.28s; }
+
+/* Theme Toggle Transition */
+body, .site-header, .feature-card, .device-category-card, 
+.faq-item, .sticky-bottom-bar, .modal-box, .stair-drawer-panel {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}

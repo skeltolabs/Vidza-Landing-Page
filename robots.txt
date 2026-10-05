@@ -1,0 +1,30 @@
+# VIDZA Player Robots.txt
+# Optimized for Googlebot, Bingbot, Applebot, DuckDuckBot, Baiduspider, Yandex
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Allow: /assets/images/
+Allow: /css/
+Allow: /js/
+
+User-agent: Bingbot
+Allow: /
+Allow: /assets/images/
+Allow: /css/
+Allow: /js/
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Host & Sitemap Directives
+Host: https://vidza.skeltolabs.com
+Sitemap: https://vidza.skeltolabs.com/sitemap.xml

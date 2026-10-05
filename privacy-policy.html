@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Privacy Policy — VIDZA Player</title>
+  
+  <meta name="title" content="Privacy Policy — VIDZA Player">
+  <meta name="description" content="Official Privacy Policy, Sensitive Permissions, and Data Safety Disclosures for VIDZA Player by SkeltoLabs. Transparent disclosures for Google Play compliance.">
+  <meta name="author" content="SkeltoLabs">
+  <meta name="theme-color" content="#07080D">
+
+  <link rel="canonical" href="https://vidza.skeltolabs.com/privacy-policy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vidza.skeltolabs.com/privacy-policy.html">
+  <meta property="og:title" content="Privacy Policy — VIDZA Player">
+  <meta property="og:description" content="Official Privacy Policy, Sensitive Permissions, and Data Safety Disclosures for VIDZA Player by SkeltoLabs.">
+  <meta property="og:image" content="https://vidza.skeltolabs.com/assets/images/tv_preview.png">
+
+  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="standalone-legal-body">
+
+  <div class="ambient-mesh" aria-hidden="true">
+    <div class="ambient-blob-purple"></div>
+    <div class="ambient-blob-red"></div>
+  </div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Self-Contained Document Wrapper (No external header, no external footer) -->
+  <div class="standalone-legal-page">
+    <div class="legal-container">
+      
+      <!-- Single Self-Contained Bordered Card -->
+      <article class="legal-doc-content">
+
+        <!-- Document Header within the Border Line -->
+        <header class="in-card-header">
+          <h1 class="in-card-title">Privacy Policy</h1>
+          <div class="in-card-meta">
+            <span>Last Updated: September 29, 2026</span>
+            <span class="meta-dot">•</span>
+            <span>Published by SkeltoLabs</span>
+            <span class="meta-dot">•</span>
+            <span>Google Play Data Safety Disclosure</span>
+          </div>
+        </header>
+
+        <!-- Document Sections -->
+        <h2>1. Introduction & Core Privacy Philosophy</h2>
+        <p>
+          At <strong>SkeltoLabs</strong>, we believe that your media consumption should remain strictly confidential. VIDZA Player is built from the ground up on a fundamental commitment: <strong>Transparent Data Practices & Local User Privacy</strong>.
+        </p>
+        <p>
+          VIDZA Player is an offline-capable video and audio playback application designed for Android Smartphones and Android TV. We do not require registration, we do not require account creation, and we do not operate remote servers that log or monitor your playback history, library contents, or personal files.
+        </p>
+
+        <h2>2. Data Collection Principles</h2>
+        <p>
+          To maintain transparency and full compliance with Google Play Developer Policies, VIDZA Player adheres to the following core data principles:
+        </p>
+        <ul>
+          <li><strong>Zero Personally Identifiable Information (PII) by SkeltoLabs:</strong> We do not collect names, email addresses, phone numbers, postal addresses, or biometric data.</li>
+          <li><strong>Zero Personal Media Telemetry:</strong> We do not log, inspect, or upload your private video titles, audio filenames, playback timestamps, duration, playlist sequences, or thumbnail caches to any remote server.</li>
+          <li><strong>Zero Analytics Trackers:</strong> We do not embed third-party behavioral analytics SDKs (such as Firebase Analytics, Adjust, or AppsFlyer) to monitor user behavior.</li>
+          <li><strong>Transparent Advertising Support:</strong> VIDZA Player is free to use and supported by non-intrusive advertisements served through Google Mobile Ads (AdMob). See Section 4 for detailed information regarding Google AdMob, Google Play Services Advertising ID (AAID), and advertising diagnostics.</li>
+        </ul>
+
+        <h2>3. Android Runtime Permissions & Functional Scopes</h2>
+        <p>
+          VIDZA Player declares runtime permissions technically required to render local media files, manage playback state, and provide full audio/video player functionality. The following table details every permission declared in our application manifest and its exact functional justification:
+        </p>
+
+        <div class="legal-table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th>Permission Name</th>
+                <th>Android API Level</th>
+                <th>Functional Purpose & Strict Scope</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>READ_MEDIA_VIDEO</code></td>
+                <td>Android 13+ (API 33+)</td>
+                <td>Allows reading video files from local storage strictly to populate the media library and render video playback. Never transmitted remotely.</td>
+              </tr>
+              <tr>
+                <td><code>READ_MEDIA_AUDIO</code></td>
+                <td>Android 13+ (API 33+)</td>
+                <td>Allows indexing local music, podcasts, and audio tracks for audio playback and DSP equalization. Never shared off-device.</td>
+              </tr>
+              <tr>
+                <td><code>READ_MEDIA_IMAGES</code></td>
+                <td>Android 13+ (API 33+)</td>
+                <td>Allows loading embedded album art, artist covers, and video thumbnail image caches for visual library browsing.</td>
+              </tr>
+              <tr>
+                <td><code>READ_EXTERNAL_STORAGE</code></td>
+                <td>Android 12 and below (API &le; 32)</td>
+                <td>Legacy permission required on older Android versions to access user-selected video and audio media files on the device filesystem.</td>
+              </tr>
+              <tr>
+                <td><code>WRITE_EXTERNAL_STORAGE</code></td>
+                <td>Android 9 and below (API &le; 29)</td>
+                <td>Legacy permission required on older Android versions to save playback state bookmarks, audio playlist modifications, and export extracted subtitle files.</td>
+              </tr>
+              <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Android 13+ (API 33+)</td>
+                <td>Allows displaying persistent background media playback controls (Play, Pause, Skip, Track Title) in the Android notification drawer and lockscreen.</td>
+              </tr>
+              <tr>
+                <td><code>WAKE_LOCK</code></td>
+                <td>All Android Releases</td>
+                <td>Prevents the device screen and CPU from going into sleep mode while a video or audio stream is actively playing.</td>
+              </tr>
+              <tr>
+                <td><code>FOREGROUND_SERVICE</code> &amp; <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td>
+                <td>Android 14+ (API 34+)</td>
+                <td>Enables uninterrupted background audio playback and system MediaSession integration when the app is minimized or the screen is locked.</td>
+              </tr>
+              <tr>
+                <td><code>INTERNET</code></td>
+                <td>All Android Releases</td>
+                <td>Utilized when you manually enter a remote network stream URL (such as RTSP, HLS, or direct HTTP video streams), when you explicitly initiate an online search for synchronized song lyrics or subtitles, and to load Google AdMob advertisements.</td>
+              </tr>
+              <tr>
+                <td><code>ACCESS_NETWORK_STATE</code> &amp; <code>ACCESS_WIFI_STATE</code></td>
+                <td>All Android Releases</td>
+                <td>Checks active network connectivity before connecting to network streams, online lyrics, or subtitle lookups, and prevents unintended streaming over metered mobile connections.</td>
+              </tr>
+              <tr>
+                <td><code>CHANGE_WIFI_MULTICAST_STATE</code></td>
+                <td>All Android Releases</td>
+                <td>Acquires a Wi-Fi Multicast lock to discover local network media servers (UPnP/DLNA), LAN RTSP video feeds, and local media streams on home networks.</td>
+              </tr>
+              <tr>
+                <td><code>MODIFY_AUDIO_SETTINGS</code></td>
+                <td>All Android Releases</td>
+                <td>Allows fine-tuning hardware audio routing, speaker gain, and applying custom 5-band equalizer digital signal processing (DSP).</td>
+              </tr>
+              <tr>
+                <td><code>VIBRATE</code></td>
+                <td>All Android Releases</td>
+                <td>Provides subtle tactile haptic feedback during player gesture adjustments (volume, brightness, seek scrub).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>4. Third-Party Advertising & Google Mobile Ads (AdMob)</h2>
+        <p>
+          VIDZA Player is free to download and use. To support ongoing software development, server maintenance for online subtitle/lyrics indexes, and codec engineering, VIDZA Player displays advertisements served by <strong>Google Mobile Ads (AdMob)</strong>, a service operated by Google LLC.
+        </p>
+        <p>
+          When you use VIDZA Player on mobile devices, Google AdMob may collect and process certain device and interaction data in accordance with Google's Privacy Policy:
+        </p>
+        <ul>
+          <li><strong>Device Identifiers:</strong> Google Play Services Advertising ID (AAID) for ad serving and frequency capping.</li>
+          <li><strong>App Activity & Interactions:</strong> Information regarding ad impressions, views, and clicks.</li>
+          <li><strong>Diagnostics:</strong> Performance metrics and ad request error logs to maintain ad delivery stability and combat fraud.</li>
+        </ul>
+        <p>
+          You can manage or reset your Advertising ID, or opt out of personalized ads at any time through your Android device settings (<strong>Settings &gt; Google &gt; Ads &gt; Reset Advertising ID or Delete Advertising ID</strong>). For more information on how Google handles advertising data, visit <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--purple-light);">Google Advertising Privacy &amp; Terms</a>.
+        </p>
+
+        <h2>5. Online Subtitle & Lyrics Queries</h2>
+        <p>
+          VIDZA Player provides integrated tools to search for synchronized song lyrics and video subtitle tracks:
+        </p>
+        <ul>
+          <li><strong>Synchronized Lyrics (LRCLIB):</strong> When you open the lyrics menu and search for lyrics, VIDZA Player queries the public LRCLIB API (<code>https://lrclib.net/api</code>) using only the song title and artist name.</li>
+          <li><strong>Online Subtitles (OpenSubtitles, SubDL, SubF2M, etc.):</strong> When you search for subtitles, VIDZA queries public subtitle providers using the media release title, year, or IMDb identifier.</li>
+        </ul>
+        <p>
+          These queries transmit only the media search terms necessary to retrieve matching subtitle files. No user personal information, account credentials, device serial numbers, or private media files are ever transmitted to these external providers.
+        </p>
+
+        <h2>6. Network Stream Playback Disclaimers</h2>
+        <p>
+          When you manually input a network stream URL (such as an RTSP surveillance feed, HLS HTTP live stream, or local LAN/SMB file path), VIDZA Player connects directly and peer-to-peer to that specified remote server. SkeltoLabs does not run an intermediary proxy server and has no visibility into the URLs you stream or the data transmitted between your device and your chosen streaming endpoint.
+        </p>
+
+        <h2>7. Subtitle Files & Secure Local Extraction</h2>
+        <p>
+          VIDZA Player allows loading external subtitle tracks (<code>.srt</code>, <code>.ass</code>, <code>.vtt</code>). If subtitles are packaged inside a ZIP archive, VIDZA unpacks the subtitle file into the app's internal sandbox cache using secure path traversal protections (Zip-Slip defense). Extracted subtitle files remain strictly on your local device.
+        </p>
+
+        <h2>8. Local Device Storage & On-Device Caching</h2>
+        <p>
+          All application settings, equalizer presets, playback bookmarks, and resume points are saved exclusively inside your device's isolated private app sandbox:
+        </p>
+        <ul>
+          <li><strong>Playback Resume Positions:</strong> Saved locally via Jetpack DataStore / Room Database. You may clear your history at any time within the player settings.</li>
+          <li><strong>Audio DSP Presets:</strong> Equalizer curve parameters and audio delay values remain strictly within your device sandbox.</li>
+          <li><strong>Thumbnails:</strong> Thumbnail bitmap caches are stored in private internal cache directories and can be cleared via Android system settings at will.</li>
+        </ul>
+
+        <h2>9. Children's Online Privacy Protection (COPPA & GDPR-K)</h2>
+        <p>
+          VIDZA Player does not knowingly collect, request, or solicit any personal information from children under the age of 13 (or under 16 in the European Union). The app's core media playback functionality operates locally on-device. For users who are children, ads served via Google AdMob can be configured to comply with COPPA guidelines.
+        </p>
+
+        <h2>10. Contact Information</h2>
+        <p>
+          If you have questions, feedback, or concerns regarding this Privacy Policy or VIDZA Player's data safety practices, please contact us directly:
+        </p>
+        <div class="legal-callout">
+          <div class="legal-callout-title">
+            SkeltoLabs Developer Contact
+          </div>
+          <p style="margin-bottom: 4px;"><strong>Developer:</strong> SkeltoLabs Engineering Team</p>
+          <p style="margin-bottom: 4px;"><strong>Application:</strong> VIDZA Player (<code>com.skeltolabs.vidza</code>)</p>
+          <p style="margin-bottom: 0;"><strong>Official Support Email:</strong> <a href="mailto:vidza@skeltolabs.com" style="color: var(--red-primary); font-weight: 700;">vidza@skeltolabs.com</a></p>
+        </div>
+
+        <!-- In-Card Footer Stamp within the Border Line -->
+        <div class="in-card-footer">
+          &copy; 2026 VIDZA Player. Powered by SkeltoLabs. All rights reserved.
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
