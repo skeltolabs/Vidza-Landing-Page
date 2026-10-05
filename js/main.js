@@ -296,7 +296,7 @@ const showcaseData = {
   player: {
     title: 'Cinematic 4K HDR Touch Player',
     desc: 'Powered by Media3 and custom FFmpeg decoders. Enjoy gesture-based HUD for instant brightness and volume control up to 200%, pinch-to-zoom, and frame-accurate seek.',
-    img: 'assets/images/phone_player.png',
+    img: 'assets/images/phone_player.webp',
     features: [
       'Dual edge vertical gestures: Brightness (left) & Volume (right)',
       'Hardware-accelerated HDR10, Dolby Vision & 10-bit color decoding',
@@ -307,7 +307,7 @@ const showcaseData = {
   color: {
     title: 'Real-Time Color & Picture Tuning',
     desc: 'Fine-tune every visual nuance of your movies with in-pipeline ColorMatrix hardware acceleration. Adjust Brightness, Contrast, Saturation, Vibrance, Warmth, and Sharpness with real-time preview, or instantly switch between 8 handcrafted cinematic presets.',
-    img: 'assets/images/phone_color_adjust.png',
+    img: 'assets/images/phone_color_adjust.webp',
     features: [
       '6 precision color sliders: Brightness, Contrast, Saturation, Vibrance, Warmth & Sharpness',
       '8 cinematic picture presets: Vivid HDR, AMOLED Deep, Cinematic Warm, Film Noir, Cyberpunk',
@@ -318,7 +318,7 @@ const showcaseData = {
   stream: {
     title: 'Direct Network Stream & URL Playback',
     desc: 'Stream any online video, live HLS / DASH broadcast, or direct media URL instantly with hardware-accelerated playback and custom HTTP headers support.',
-    img: 'assets/images/stream.png',
+    img: 'assets/images/stream.webp',
     features: [
       'Instant playback of HTTP, HTTPS, HLS (m3u8), and DASH network streams',
       'Hardware decoding pipeline with adaptive bitrate switching',
@@ -329,7 +329,7 @@ const showcaseData = {
   night: {
     title: 'Sub-Zero Night Mode & Eye Comfort',
     desc: 'Enjoy late-night cinematic viewing in complete darkness without eye fatigue. Sub-zero software dimming lowers brightness below Android\'s hardware limit, combined with an adjustable warm amber filter.',
-    img: 'assets/images/night mode and dimness.png',
+    img: 'assets/images/night mode and dimness.webp',
     features: [
       'Sub-zero brightness dimmer: Lowers luminance beyond Android system hardware minimum',
       'Eye Comfort Warm Shield: Calibrated amber temperature to eliminate blue light strain',
@@ -340,7 +340,7 @@ const showcaseData = {
   equalizer: {
     title: '5-Band Precision Graphic Equalizer',
     desc: 'Custom in-pipeline Media3 32-bit floating point PCM audio processor. Features 5 calibrated frequency bands (60Hz, 230Hz, 910Hz, 3.6kHz, 14kHz), Bass Boost, 3D Virtualizer, and an anti-clipping limiter.',
-    img: 'assets/images/phone_equalizer.png',
+    img: 'assets/images/phone_equalizer.webp',
     features: [
       '5 calibrated frequency bands: 60Hz, 230Hz, 910Hz, 3.6kHz, 14kHz',
       'Sub-bass boost knob with non-distorting hardware limiter',
@@ -351,7 +351,7 @@ const showcaseData = {
   library: {
     title: 'Intelligent Media Library & Folders',
     desc: 'Organize your entire media collection automatically. Instant folder scanning, Continue Watching history cards, and quick search with zero lag.',
-    img: 'assets/images/phone_library.png',
+    img: 'assets/images/phone_library.webp',
     features: [
       'Continue Watching carousel with resume position memory',
       'Automatic categorization: Videos, Music, Folders, Playlists',
@@ -362,7 +362,7 @@ const showcaseData = {
   lyrics: {
     title: 'Synchronized Karaoke Lyrics Studio',
     desc: 'Transform your audio listening into a visual karaoke studio. VIDZA auto-detects embedded and external .lrc lyrics, synchronizing glowing highlighted lines to millisecond playback timestamps with customizable typography.',
-    img: 'assets/images/phone_lyrics.png',
+    img: 'assets/images/phone_lyrics.webp',
     features: [
       'Real-time auto-scrolling synced lyrics with purple-to-red neon active line glow',
       'Full support for embedded ID3 tags, local .lrc files, and online lyric search',
@@ -373,7 +373,7 @@ const showcaseData = {
   tv: {
     title: 'Native Android TV Interface',
     desc: 'Crafted specifically for your living room television. Effortless D-pad remote navigation, glowing focus indicators, and minimal cinematic design.',
-    img: 'assets/images/tv_preview.png',
+    img: 'assets/images/tv_preview.webp',
     features: [
       'Complete remote control compatibility (DPAD & Media keys)',
       'Luxury focus border with elevation and subtle glow',

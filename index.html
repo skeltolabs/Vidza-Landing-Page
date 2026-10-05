@@ -109,6 +109,9 @@
   <link rel="icon" type="image/png" href="assets/images/app_icon.png">
   <link rel="apple-touch-icon" href="assets/images/app_icon.png">
 
+  <!-- Preload Critical LCP Hero Image -->
+  <link rel="preload" as="image" href="assets/images/tv_preview.webp" type="image/webp" fetchpriority="high">
+
   <!-- Performance Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,11 +119,12 @@
     href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet">
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/animations.css?v=6.0">
-  <link rel="stylesheet" href="css/style.css?v=6.0">
+  <link rel="stylesheet" href="css/style.css?v=6.1">
+  <link rel="stylesheet" href="css/animations.css?v=6.1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css?v=6.1"></noscript>
 
   <!-- Inline critical overrides — always fresh, guaranteed no-cache -->
   <style>
@@ -627,8 +631,8 @@
       <div class="stair-drawer-scroll-wrap">
         <div class="stair-drawer-header">
           <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="assets/images/app_icon.png" alt="VIDZA Icon"
-              style="width: 38px; height: 38px; border-radius: 10px;">
+            <img src="assets/images/app_icon.webp" alt="VIDZA Icon"
+              style="width: 38px; height: 38px; border-radius: 10px;" width="38" height="38" loading="lazy" decoding="async">
             <div>
               <div
                 style="font-weight: 800; font-family: 'Outfit', sans-serif; font-size: 1.15rem; color: var(--text-white); letter-spacing: -0.01em;">
@@ -872,14 +876,15 @@
             <div class="hero-devices-canvas" id="heroDevicesCanvas">
               <!-- 1. Android TV Display (Now prominently visible) -->
               <div class="hero-tv-wrap" id="heroTvWrap">
-                <img src="assets/images/tv_preview.png"
-                  alt="VIDZA Player on Android TV with 4K continue watching and remote navigation" class="tv-screen-img">
+                <img src="assets/images/tv_preview.webp"
+                  alt="VIDZA Player on Android TV with 4K continue watching and remote navigation" class="tv-screen-img"
+                  width="1955" height="1177" fetchpriority="high" loading="eager" decoding="async">
               </div>
 
               <!-- 2. Smartphone Display (Foreground overlap) -->
               <div class="hero-phone-wrap" id="heroPhoneWrap">
-                <img src="assets/images/phone_player.png" alt="VIDZA Player Mobile Phone Gesture Interface"
-                  class="phone-screen-img">
+                <img src="assets/images/phone_player.webp" alt="VIDZA Player Mobile Phone Gesture Interface"
+                  class="phone-screen-img" width="941" height="1672" loading="eager" decoding="async">
               </div>
             </div>
 
@@ -1251,8 +1256,8 @@
               </button>
 
               <div class="showcase-preview-frame" id="showcasePreviewFrame" title="Tap to view fullscreen">
-                <img src="assets/images/phone_player.png" alt="VIDZA Player Screenshot" id="showcaseImg"
-                  class="showcase-screen-img">
+                <img src="assets/images/phone_player.webp" alt="VIDZA Player Screenshot" id="showcaseImg"
+                  class="showcase-screen-img" width="941" height="1672" loading="lazy" decoding="async">
               </div>
 
               <!-- Mobile Dot Pagination Indicators -->
@@ -1315,7 +1320,8 @@
             </p>
 
             <div class="device-card-preview-wrap">
-              <img src="assets/images/phone_player.png" alt="VIDZA Smartphone Interface" class="device-card-clean-img">
+              <img src="assets/images/phone_player.webp" alt="VIDZA Smartphone Interface" class="device-card-clean-img"
+                width="941" height="1672" loading="lazy" decoding="async">
             </div>
 
             <ul class="device-list-items">
@@ -1366,8 +1372,8 @@
             </p>
 
             <div class="device-card-preview-wrap">
-              <img src="assets/images/tv_preview.png" alt="VIDZA Android TV Interface"
-                class="device-card-clean-img tv-clean-img">
+              <img src="assets/images/tv_preview.webp" alt="VIDZA Android TV Interface"
+                class="device-card-clean-img tv-clean-img" width="1955" height="1177" loading="lazy" decoding="async">
             </div>
 
             <ul class="device-list-items">
@@ -1812,7 +1818,8 @@
     <div class="container">
       <div class="footer-bottom-bar">
         <div class="footer-logo-row">
-          <img src="assets/images/app_icon.png" alt="VIDZA Player Icon" class="footer-brand-icon">
+          <img src="assets/images/app_icon.webp" alt="VIDZA Player Icon" class="footer-brand-icon"
+            width="44" height="44" loading="lazy" decoding="async">
           <span class="footer-brand-name">VIDZA Player</span>
           <span class="footer-brand-badge">Android & TV</span>
         </div>
@@ -1843,8 +1850,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/scroll-effects.js?v=6.0"></script>
-  <script src="js/main.js?v=6.0"></script>
+  <script src="js/scroll-effects.js?v=6.1" defer></script>
+  <script src="js/main.js?v=6.1" defer></script>
 </body>
 
 </html>
