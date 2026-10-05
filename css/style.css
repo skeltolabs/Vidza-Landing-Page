@@ -568,9 +568,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 12px;
+  padding-bottom: 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   width: 100%;
   box-sizing: border-box;
 }
