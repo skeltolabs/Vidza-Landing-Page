@@ -115,11 +115,17 @@
   <!-- Performance Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+  <!-- Asynchronous Non-Render-Blocking Google Fonts -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  </noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">
+  </noscript>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/style.css?v=6.1">
@@ -813,20 +819,20 @@
         </div>
 
         <!-- Headline -->
-        <h1 class="hero-headline reveal-init delay-1">
+        <h1 class="hero-headline">
           The Definitive Media Experience for <span class="gradient-text-purple">Smartphones</span><br>
           & <span class="gradient-text-red">Android TV</span>
         </h1>
 
         <!-- Subtitle -->
-        <p class="hero-subtitle reveal-init delay-2">
+        <p class="hero-subtitle">
           Built with Google Media3 and custom FFmpeg architecture for ultra-smooth playback. Tailored for touch-first
           handhelds and television screens — with real-time color adjustment, non-intrusive ads, and complete local
           privacy.
         </p>
 
         <!-- CTA Buttons (Direct Google Play Store Link) -->
-        <div class="hero-cta-group reveal-init delay-3">
+        <div class="hero-cta-group">
           <a href="https://play.google.com/store/apps/details?id=com.skeltolabs.vidza" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="gap: 10px;">
             <svg viewBox="0 0 24 24" width="23" height="23" fill="none" style="flex-shrink: 0;">
               <path d="M3.6 1.8L14.4 12.6L3.6 23.4C3.2 23 3 22.4 3 21.6V3.6C3 2.8 3.2 2.2 3.6 1.8Z" fill="#00D2FF"/>
@@ -839,7 +845,7 @@
         </div>
 
         <!-- Current Devices Availability Strip -->
-        <div class="hero-devices-row reveal-init delay-4">
+        <div class="hero-devices-row">
           <div class="platform-chip active">
             <span class="status-dot"></span>
             <span class="material-symbols-rounded" style="font-size: 18px;">smartphone</span>
@@ -853,7 +859,7 @@
         </div>
 
         <!-- Interactive Device Switcher Tabs -->
-        <div class="reveal-init delay-4 hero-device-toggle-wrap" id="heroDeviceToggleWrap">
+        <div class="hero-device-toggle-wrap" id="heroDeviceToggleWrap">
           <div class="device-toggle-container">
             <button class="device-tab-btn active" data-device="both" id="tabBoth">
               <span class="material-symbols-rounded">devices</span>
@@ -871,7 +877,7 @@
         </div>
 
         <!-- Device Stage (Clean TV & Phone Displays with Soft Silhouette Shadow) -->
-        <div class="hero-stage reveal-init delay-5" id="heroStage">
+        <div class="hero-stage" id="heroStage">
           <div class="hero-devices-showcase view-both" id="heroDevicesShowcase">
             <div class="hero-devices-canvas" id="heroDevicesCanvas">
               <!-- 1. Android TV Display (Now prominently visible) -->
