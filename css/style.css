@@ -1998,6 +1998,10 @@ img {
 }
 
 /* Device Ecosystem & Roadmap Section */
+.devices-mobile-nav {
+  display: none;
+}
+
 .devices-split-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -4073,12 +4077,9 @@ img {
     padding: 8px 10px;
   }
 
-  /* Hero on Phone — Compact & Immediate */
-  .hero-section {
-    padding-top: calc(var(--header-height) + 18px);
   /* Hero Section on Phone — Crisp, Beautifully Centered Above-the-Fold Composition */
   .hero-section {
-    padding-top: calc(var(--header-height) + 10px);
+    padding-top: calc(var(--header-height) + 12px);
     padding-bottom: 18px;
   }
   .hero-pill-badge {

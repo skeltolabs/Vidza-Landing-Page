@@ -1024,28 +1024,3 @@ function initFeatureFilters() {
   });
 }
 
-/**
- * 12. Ecosystem Tabs (Mobile device-category switcher in #devices section)
- * Switches between "Smartphone" and "Android TV" device category cards on mobile.
- */
-function initEcosystemTabs() {
-  const tabBtns = document.querySelectorAll('.device-cat-btn');
-  const deviceCards = document.querySelectorAll('.device-category-card');
-
-  if (!tabBtns.length || !deviceCards.length) return;
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = btn.getAttribute('data-device-cat');
-
-      tabBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      deviceCards.forEach(card => {
-        const cardType = card.getAttribute('data-device-type');
-        card.style.display = (target === 'all' || cardType === target || !cardType) ? '' : 'none';
-      });
-    });
-  });
-}
-
