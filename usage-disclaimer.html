@@ -10,14 +10,84 @@
   <meta name="author" content="SkeltoLabs">
   <meta name="theme-color" content="#07080D">
 
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://vidza.skeltolabs.com/usage-disclaimer.html">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vidza.skeltolabs.com/usage-disclaimer.html">
+  <meta property="og:site_name" content="VIDZA Player">
   <meta property="og:title" content="Usage Disclaimer — VIDZA Player">
   <meta property="og:description" content="Legal Usage Disclaimer, DMCA Statement, and Software Architecture Scope for VIDZA Player.">
   <meta property="og:image" content="https://vidza.skeltolabs.com/assets/images/tv_preview.png">
 
-  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://vidza.skeltolabs.com/usage-disclaimer.html">
+  <meta name="twitter:title" content="Usage Disclaimer — VIDZA Player">
+  <meta name="twitter:description" content="Legal Usage Disclaimer, DMCA Statement, and Software Architecture Scope for VIDZA Player.">
+  <meta name="twitter:image" content="https://vidza.skeltolabs.com/assets/images/tv_preview.png">
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://vidza.skeltolabs.com/usage-disclaimer.html#webpage",
+        "url": "https://vidza.skeltolabs.com/usage-disclaimer.html",
+        "name": "Usage Disclaimer — VIDZA Player",
+        "description": "Legal Usage Disclaimer, DMCA Statement, and Software Architecture Scope for VIDZA Player.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://vidza.skeltolabs.com/#website",
+          "name": "VIDZA Player",
+          "url": "https://vidza.skeltolabs.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://vidza.skeltolabs.com/#organization",
+          "name": "SkeltoLabs",
+          "url": "https://vidza.skeltolabs.com/"
+        },
+        "datePublished": "2026-09-28",
+        "dateModified": "2026-10-06",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://vidza.skeltolabs.com/usage-disclaimer.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://vidza.skeltolabs.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Usage Disclaimer",
+            "item": "https://vidza.skeltolabs.com/usage-disclaimer.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -34,9 +104,45 @@
   </div>
   <div class="grid-overlay" aria-hidden="true"></div>
 
-  <!-- Self-Contained Document Wrapper (No external header, no external footer) -->
+  <!-- Document Wrapper -->
   <div class="standalone-legal-page">
     <div class="legal-container">
+
+      <!-- Branded Topbar with Home Link -->
+      <div class="legal-doc-topbar">
+        <a href="/" class="legal-doc-brand" title="VIDZA Player Home">
+          <img src="/favicon-48x48.png" alt="VIDZA Player Icon" width="36" height="36">
+          <span>VIDZA Player</span>
+        </a>
+        <a href="/" class="plain-back-link" style="gap: 6px;">
+          <span class="material-symbols-rounded" style="font-size: 20px;">arrow_back</span>
+          <span>Back to Home</span>
+        </a>
+      </div>
+
+      <!-- Interactive Legal Navigation Tabs -->
+      <nav class="legal-nav-tabs" aria-label="Legal Documents Navigation">
+        <a href="privacy-policy.html" class="legal-tab-link">
+          <span class="material-symbols-rounded" style="font-size: 18px;">security</span>
+          <span>Privacy Policy</span>
+        </a>
+        <a href="terms-of-service.html" class="legal-tab-link">
+          <span class="material-symbols-rounded" style="font-size: 18px;">gavel</span>
+          <span>Terms of Service</span>
+        </a>
+        <a href="usage-disclaimer.html" class="legal-tab-link active">
+          <span class="material-symbols-rounded" style="font-size: 18px;">info</span>
+          <span>Usage Disclaimer</span>
+        </a>
+        <a href="open-source-licenses.html" class="legal-tab-link">
+          <span class="material-symbols-rounded" style="font-size: 18px;">code</span>
+          <span>Open Source Licenses</span>
+        </a>
+        <a href="contact.html" class="legal-tab-link">
+          <span class="material-symbols-rounded" style="font-size: 18px;">mail</span>
+          <span>Contact Support</span>
+        </a>
+      </nav>
       
       <!-- Single Self-Contained Bordered Card -->
       <article class="legal-doc-content">
@@ -45,7 +151,7 @@
         <header class="in-card-header">
           <h1 class="in-card-title">Usage Disclaimer</h1>
           <div class="in-card-meta">
-            <span>Last Updated: September 28, 2026</span>
+            <span>Last Updated: October 6, 2026</span>
             <span class="meta-dot">•</span>
             <span>Published by SkeltoLabs</span>
             <span class="meta-dot">•</span>

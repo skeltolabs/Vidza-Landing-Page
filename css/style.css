@@ -3109,6 +3109,12 @@ img {
   border-radius: 9px;
   border: 1px solid var(--border-subtle);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.legal-doc-brand:hover img {
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px rgba(171, 71, 232, 0.45);
 }
 
 .legal-doc-brand span {
@@ -3323,10 +3329,17 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 36px;
-  padding-bottom: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--border-subtle);
   overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.legal-nav-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .legal-tab-link {
@@ -3341,20 +3354,22 @@ img {
   font-size: 0.9rem;
   font-weight: 600;
   white-space: nowrap;
-  transition: all 0.25s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
 }
 
 .legal-tab-link:hover {
-  border-color: var(--border-medium);
+  border-color: var(--purple-light);
   color: var(--text-white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(171, 71, 232, 0.2);
 }
 
 .legal-tab-link.active {
   background: var(--gradient-brand);
   color: #FFFFFF !important;
   border-color: transparent;
-  box-shadow: 0 4px 16px var(--purple-glow);
+  box-shadow: 0 4px 18px rgba(171, 71, 232, 0.45);
 }
 
 .legal-doc-content {

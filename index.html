@@ -23,6 +23,7 @@
   <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <link rel="canonical" href="https://vidza.skeltolabs.com/">
   <meta name="google-site-verification" content="Y6oNvi57I-vZeVimYmFJ8Eub9Br9MLsQcf1hKWki4XY">
+  <meta name="msvalidate.01" content="4CB6B55EFA1428236EBDF5169F8B50AA">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -54,17 +55,32 @@
         "@type": "SoftwareApplication",
         "@id": "https://vidza.skeltolabs.com/#software",
         "name": "VIDZA Player",
-        "alternateName": "Vidza",
+        "alternateName": [
+          "Vidza",
+          "Vidza Player",
+          "VIDZA 4K Video Player",
+          "Vidza Video Player",
+          "Vidza Music Player",
+          "VIDZA Media Player"
+        ],
         "applicationCategory": "MultimediaApplication",
         "operatingSystem": "Android 8.0+, Android TV, Google TV, ChromeOS",
         "url": "https://vidza.skeltolabs.com/",
         "image": "https://vidza.skeltolabs.com/assets/images/app_icon.png",
         "screenshot": "https://vidza.skeltolabs.com/assets/images/tv_preview.png",
         "description": "VIDZA Player is an all-format 4K HDR video player and aesthetic music player for Android and TV. Experience real-time color adjustment, sub-zero night mode, karaoke lyrics, 5-band equalizer, and 200% audio boost.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "1250",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
         "offers": {
           "@type": "Offer",
           "price": "0",
-          "priceCurrency": "USD"
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
         },
         "author": {
           "@type": "Organization",
@@ -97,17 +113,67 @@
         "@id": "https://vidza.skeltolabs.com/#website",
         "url": "https://vidza.skeltolabs.com/",
         "name": "VIDZA Player",
+        "alternateName": [
+          "VIDZA",
+          "Vidza Player",
+          "Vidza",
+          "VIDZA Player App",
+          "vidza.skeltolabs.com"
+        ],
         "publisher": {
           "@id": "https://vidza.skeltolabs.com/#organization"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://vidza.skeltolabs.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does VIDZA's real-time Color Adjustment and 8 Picture Presets work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA Player integrates an in-pipeline GPU-accelerated ColorMatrix post-processor. You can fine-tune 6 precision picture parameters in real time: Brightness, Contrast, Saturation, Vibrance, Warmth, and Sharpness (-100 to +100). Or instantly tap one of 8 handcrafted cinematic presets: Vivid HDR, AMOLED Deep, Cinematic Warm, Cool Cyan, Film Noir, Vintage Film, and Cyberpunk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Night Mode & Eye Comfort Dimmer, and how does it protect my eyes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA's Sub-Zero Night Dimmer uses software-layer luminance attenuation to lower screen brightness far below your device's physical minimum limit. Combined with our adjustable Eye Comfort Warm Shield, it filters out high-frequency blue light to prevent eye fatigue and melatonin suppression while watching in bed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Synchronized Lyrics mode work for audio playback?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA transforms your audio player into a real-time karaoke studio. The player automatically detects embedded ID3 lyrics, parses local .lrc files, and synchronizes the glowing active line in real time with millisecond precision and vocal offset calibration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the 5-band equalizer and 200% Volume Boost work safely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "VIDZA uses a custom in-pipeline Media3 32-bit floating point PCM audio processor with 5 calibrated frequency bands (60Hz, 230Hz, 910Hz, 3.6kHz, and 14kHz). It features an anti-clipping headroom limiter that prevents harsh audio distortion and protects small phone and TV speakers while boosting dialogue clarity up to +200%."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
 
-  <!-- Favicon & Icons -->
-  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
-  <link rel="apple-touch-icon" href="assets/images/app_icon.png">
+  <!-- Favicon & Icons (Standard Multi-size suite for Google Search, Bing, and Browsers) -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- Preload Critical LCP Hero Image -->
   <link rel="preload" as="image" href="assets/images/tv_preview.webp" type="image/webp" fetchpriority="high">
@@ -435,98 +501,6 @@
       }
     }
   </style>
-
-  <!-- Structured Data / JSON-LD Schema for Google & Bing -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://vidza.skeltolabs.com/#software",
-        "name": "VIDZA Player",
-        "operatingSystem": "Android 8.0+, Android TV, Google TV, Fire OS",
-        "applicationCategory": "MultimediaApplication",
-        "applicationSubCategory": "Video Players & Editors, Audio Players",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD"
-        },
-        "description": "Best all-format 4K HDR video player app and aesthetic music player for Android Smartphones and Android TV. Features real-time color adjustment, sub-zero night mode, synchronized karaoke lyrics, and 5-band equalizer free with non-intrusive ads.",
-        "image": "https://vidza.skeltolabs.com/assets/images/app_icon.png",
-        "screenshot": [
-          "https://vidza.skeltolabs.com/assets/images/phone_player.png",
-          "https://vidza.skeltolabs.com/assets/images/phone_color_adjust.png",
-          "https://vidza.skeltolabs.com/assets/images/stream.png",
-          "https://vidza.skeltolabs.com/assets/images/night%20mode%20and%20dimness.png",
-          "https://vidza.skeltolabs.com/assets/images/phone_equalizer.png",
-          "https://vidza.skeltolabs.com/assets/images/phone_library.png",
-          "https://vidza.skeltolabs.com/assets/images/phone_lyrics.png",
-          "https://vidza.skeltolabs.com/assets/images/tv_preview.png"
-        ],
-        "author": {
-          "@type": "Organization",
-          "name": "SkeltoLabs",
-          "url": "https://vidza.skeltolabs.com"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://vidza.skeltolabs.com/#website",
-        "url": "https://vidza.skeltolabs.com/",
-        "name": "VIDZA Player Official Website",
-        "description": "Next-Gen Cinematic Video & Audio Player for Android & TV",
-        "publisher": {
-          "@type": "Organization",
-          "name": "SkeltoLabs",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://vidza.skeltolabs.com/assets/images/app_icon.png"
-          }
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://vidza.skeltolabs.com/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How does VIDZA's real-time Color Adjustment and 8 Picture Presets work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "VIDZA Player integrates an in-pipeline GPU-accelerated ColorMatrix post-processor. You can fine-tune 6 precision picture parameters in real time: Brightness, Contrast, Saturation, Vibrance, Warmth, and Sharpness (-100 to +100). Or instantly tap one of 8 handcrafted cinematic presets: Vivid HDR, AMOLED Deep, Cinematic Warm, Cool Cyan, Film Noir, Vintage Film, and Cyberpunk."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is Night Mode & Eye Comfort Dimmer, and how does it protect my eyes?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "VIDZA's Sub-Zero Night Dimmer uses software-layer luminance attenuation to lower screen brightness far below your device's physical minimum limit. Combined with our adjustable Eye Comfort Warm Shield, it filters out high-frequency blue light to prevent eye fatigue and melatonin suppression while watching in bed."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does the Synchronized Lyrics mode work for audio playback?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "VIDZA transforms your audio player into a real-time karaoke studio. The player automatically detects embedded ID3 lyrics, parses local .lrc files, and synchronizes the glowing active line in real time with millisecond precision and vocal offset calibration."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does the 5-band equalizer and 200% Volume Boost work safely?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "VIDZA uses a custom in-pipeline Media3 32-bit floating point PCM audio processor with 5 calibrated frequency bands (60Hz, 230Hz, 910Hz, 3.6kHz, and 14kHz). It features an anti-clipping headroom limiter that prevents harsh audio distortion and protects small phone and TV speakers while boosting dialogue clarity up to +200%."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 
 <body>
@@ -819,8 +793,7 @@
 
         <!-- Headline -->
         <h1 class="hero-headline">
-          The Definitive Media Experience for <span class="gradient-text-purple">Smartphones</span><br>
-          & <span class="gradient-text-red">Android TV</span>
+          <span class="gradient-text-purple">VIDZA Player</span> &mdash; The Definitive Media Experience for <span class="gradient-text-red">Smartphones &amp; Android TV</span>
         </h1>
 
         <!-- Subtitle -->

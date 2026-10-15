@@ -7,6 +7,7 @@ desktop.ini
 server.py
 *.log
 contact_form_preview.png
+scratch_jar/
 
 # Editor Directories
 .vscode/
