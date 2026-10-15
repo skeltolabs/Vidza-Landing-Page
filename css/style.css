@@ -3140,9 +3140,9 @@ img {
 }
 
 .legal-container {
-  max-width: 960px;
+  max-width: 860px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 20px;
 }
 
 .legal-breadcrumb {
@@ -3223,7 +3223,7 @@ img {
 }
 
 .in-card-pretitle {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -3232,29 +3232,29 @@ img {
 
 .in-card-title {
   font-family: 'Outfit', sans-serif;
-  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-size: clamp(1.65rem, 3.2vw, 2.1rem);
   font-weight: 800;
   color: var(--text-white);
-  line-height: 1.15;
-  margin-bottom: 10px;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  letter-spacing: -0.015em;
 }
 
 .in-card-meta {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 0.92rem;
-  color: var(--text-secondary);
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
   flex-wrap: wrap;
 }
 
 .in-card-footer {
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 28px;
+  padding-top: 16px;
   border-top: 1px solid var(--border-subtle);
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
 }
 
@@ -3375,19 +3375,21 @@ img {
 .legal-doc-content {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-xl);
-  padding: 48px;
-  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-lg);
+  padding: 34px 38px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
 }
 
 .legal-doc-content h2 {
-  font-size: 1.6rem;
-  margin-top: 36px;
-  margin-bottom: 16px;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 10px;
   color: var(--text-white);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+  line-height: 1.35;
 }
 
 .legal-doc-content h2:first-of-type {
@@ -3395,66 +3397,77 @@ img {
 }
 
 .legal-doc-content h3 {
-  font-size: 1.25rem;
-  margin-top: 24px;
-  margin-bottom: 12px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 8px;
   color: var(--text-white);
+  line-height: 1.35;
 }
 
 .legal-doc-content p {
   color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  font-size: 0.91rem;
+  line-height: 1.68;
+  margin-bottom: 12px;
+  text-align: left;
 }
 
 .legal-doc-content ul, .legal-doc-content ol {
   color: var(--text-secondary);
-  margin-left: 24px;
-  margin-bottom: 20px;
-  line-height: 1.8;
+  font-size: 0.91rem;
+  line-height: 1.68;
+  margin-left: 20px;
+  margin-bottom: 14px;
 }
 
 .legal-doc-content li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .legal-doc-content code {
-  background: rgba(255, 42, 85, 0.1);
+  background: rgba(255, 42, 85, 0.08);
   color: var(--red-primary);
-  padding: 2px 6px;
+  padding: 1.5px 5px;
   border-radius: 4px;
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.88em;
+  font-size: 0.85em;
 }
 
 .legal-callout {
-  background: rgba(171, 71, 232, 0.08);
-  border-left: 4px solid var(--purple-light);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  padding: 20px 24px;
-  margin: 24px 0;
+  background: rgba(171, 71, 232, 0.06);
+  border-left: 3px solid var(--purple-light);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  margin: 18px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
 }
 
 .legal-callout.callout-red {
-  background: rgba(255, 42, 85, 0.08);
+  background: rgba(255, 42, 85, 0.06);
   border-left-color: var(--red-primary);
 }
 
 .legal-callout-title {
   font-weight: 700;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--text-white);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
+.legal-callout p {
+  font-size: 0.88rem !important;
+  line-height: 1.6 !important;
+}
+
 .legal-table-wrap {
   overflow-x: auto;
-  margin: 24px 0;
-  border-radius: var(--radius-md);
+  margin: 18px 0;
+  border-radius: 8px;
   border: 1px solid var(--border-subtle);
 }
 
@@ -3462,14 +3475,17 @@ img {
   width: 100%;
   border-collapse: collapse;
   text-align: left;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
 }
 
 .legal-table th {
   background: rgba(255, 255, 255, 0.04);
   color: var(--text-white);
-  padding: 14px 18px;
+  padding: 10px 14px;
   font-weight: 700;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -3479,9 +3495,11 @@ img {
 }
 
 .legal-table td {
-  padding: 14px 18px;
+  padding: 10px 14px;
   border-bottom: 1px solid var(--border-subtle);
   color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.55;
 }
 
 .legal-table tr:last-child td {
@@ -4716,11 +4734,22 @@ img {
     font-size: 1.65rem;
   }
   .legal-doc-content {
-    padding: 22px 16px;
-    border-radius: var(--radius-lg);
+    padding: 20px 18px;
+    border-radius: var(--radius-md);
   }
   .legal-doc-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin-top: 22px;
+    margin-bottom: 8px;
+  }
+  .legal-doc-content p,
+  .legal-doc-content ul,
+  .legal-doc-content ol {
+    font-size: 0.88rem;
+    line-height: 1.62;
+  }
+  .in-card-title {
+    font-size: 1.5rem !important;
   }
 
   /* Modals on Phone */
