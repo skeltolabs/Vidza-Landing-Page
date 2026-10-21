@@ -4,6 +4,7 @@
 User-agent: *
 Allow: /
 Allow: /favicon.ico
+Allow: /favicon.svg
 Allow: /favicon*.png
 Allow: /apple-touch-icon.png
 Allow: /site.webmanifest
@@ -15,10 +16,13 @@ Allow: /assets/images/
 Allow: /css/
 Allow: /js/
 Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /favicon*.png
 
 User-agent: Google-Favicon
 Allow: /
 Allow: /favicon.ico
+Allow: /favicon.svg
 Allow: /favicon*.png
 Allow: /assets/images/
 
